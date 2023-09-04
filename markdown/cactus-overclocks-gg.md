@@ -18,18 +18,12 @@ underpowered,
 The specifics of these upgrades are detailed in this document. A maximum of one overclock is allowed per weapon.
 
 <p></p>
-At the time of writing, the Archive missions with Overclock Upgrades available are:
+At the time of writing, the Galvanized Gauntlet missions with Overclock Upgrades available are:
 
-- Decay - Diptera Dash (Intermediate)
-- Decompose - Ghoulish Genesis (Advanced)
-- Legerdemain - Shrouded Shrieks (Advanced)
-- Madhattan - Diamond in the Rough (Expert)
-- Madhattan - Night Shift (Intermediate)
-- Marsbase - Secret Struggle (Advanced)
-- Lostvalley - Spine Thief (Intermediate)
-- Sequoia - Woodland Pollution (Expert)
-- Skeleclipse - Crescent Calamity (Intermediate)
-- Swirl Event - Trickster Terror (Advanced)
+- Lotus - LED-Motif (Advanced)
+- Quetzal - Banana Barricade (Expert)
+- Skangus - Metal Scorn (Advanced)
+- Steep - Drill Down Disaster (Advanced)
 
 <p></p>
 Weapon stat reference
@@ -55,15 +49,16 @@ General Notes
 
 ## Scout
 ### Primary
-- Unstable Mod: Panic Mode
-    - <Pos>Fires +20% bullets per shot</Pos>
-    - <Pos>+34% weapon reload speed</Pos>
-    - <Neg>Hold fire to load up to shell capacity</Neg>
-    - <Neg>Auto-fires full clip once released</Neg>
-    - <Neg>Up to -50% weapon accuracy as health decreases</Neg>
+- Unstable Mod: Cycle Overload
+  - <Pos>+25% weapon damage</Pos>
+  - <Pos>+35% weapon firing speed</Pos>
+  - <Neg>-150% weapon reload speed</Neg>
+  - <Neg>-100% weapon accuracy</Neg>
   - Available on:
     - <Nor>Scattergun</Nor>
-    - <Uni>Backscatter</Uni>
+    - <Uni>Back Scatter</Uni>
+  - Notes:
+    - <Neg>-150% weapon reload speed</Neg> is incorrectly listed as '60% slower reload'.
 - Unstable Mod: Vintage Model
     - <Pos>Boost is not reduced on taking damage</Pos>
     - <Pos>+40% weapon accuracy</Pos>
@@ -90,7 +85,7 @@ General Notes
     - <Uni>Shortstop</Uni>
   - Notes:
     - <Neg>Increase in push force taken from damage and airblast</Neg> appears to be altered to be provided globally rather than when active.
-- Unstable Mod:: Slim Rounds
+- Unstable Mod:: Slim Slugs
     - <Pos>+10% weapon damage</Pos>
     - <Pos>+20% weapon accuracy</Pos>
     - <Pos>No weapon knockback on target</Pos>
@@ -108,7 +103,7 @@ General Notes
   - Available on:
     - <Uni>Soda Popper</Uni>
   - Notes:
-    - Effect override uses condition 16, meaning the <Uni>Buff Banner</Uni> will erase Hype effect if the Scout leaves its radius whilst both are active.
+    - Effect override uses condition 19, meaning the <Uni>Crit-a-cola</Uni> will drain Hype effect when active.
 
 ### Secondary
 - Stable Mod: Combo Bullets
@@ -132,11 +127,17 @@ General Notes
         - Buying -35% Speed on Target and swapping to this does not work.
 - Stable Mod: Battalion's Bonk-up
     - <Neu>Replaces Bonk! Effect with Battalion's Backup effect</Neu>
+    - <Pos>Stun and knockback immune during effect</Pos>
+    - <Pos>Weapon taunt can be used while airborne</Pos>
     - Available on:
         - <Uni>Bonk! Atomic Punch</Uni>
     - Notes:
         - Effect override uses condition 26, meaning the <Uni>Battalion's Backup</Uni> will erase Hype effect if the Scout leaves its radius whilst both are active.
-        - Appears to last 10s instead of the expected 8s, though this does not appear to be intended.
+        - Appears to last 10s instead of the expected 8s, though this does not appear to be intended. Possibly a consequence of the condition used itself.
+        - <Pos>Stun and knockback immune during effect</Pos> is unlisted, provided by condition 28.
+          - The <Uni>Quick-Fix</Uni> particles may be misleading; the effect does not provide any healing.
+        - <Pos>Weapon taunt can be used while airborne</Pos> is unlisted.
+          - This means the taunt cannot be cancelled, but this weapon only applies its effect at the end of the taunt anyway.
 - Stable Mod: Hot Knife
     - <Pos>On weapon hit: Target is ignited for 7.5s</Pos>
     - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
@@ -186,12 +187,10 @@ General Notes
 - Unstable Mod: Sugar Shock
     - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
     - <Pos>Wearer blast damage vulnerability removed</Pos>
-    - <Pos>On weapon hit: Gain a speed boost for 10s</Pos>
+    - <Pos>On weapon hit: Gain a speed boost for 5s</Pos>
     - <Neg>-15 max health on wearer</Neg>
     - Available on:
         - <Uni>Candy Cane</Uni>
-    - Notes:
-        - <Pos>On weapon hit: Gain a speed boost for 10s</Pos> is unlisted.
 - Unstable Mod: Soul Scorcher
     - <Pos>+600% base weapon damage vs burning players</Pos>
     - <Pos>All players connected via Medigun beams are hit by weapon</Pos>
@@ -215,7 +214,8 @@ General Notes
 ### Primary
 - Unstable Mod: RPG Module
   - <Pos>+25% weapon damage</Pos>
-  - <Pos>+35% blast radius</Pos>
+  - <Pos>+35% weapon blast radius</Pos>
+  - <Pos>Weapon projectiles cannot be reflected or deflected</Pos>
   - <Neg>Weapon Clip Size cannot be upgraded</Neg>
   - <Neg>Rockets now fire in an arc</Neg>
   - <Neg>-75% weapon clip size</Neg>
@@ -228,16 +228,19 @@ General Notes
     - Rockets are assigned a -600HUs<sup>-2</sup> vertical acceleration, reducing their effective range from infinite to ~2017HU along flat ground fired at -45°.
     - <Neg>Clip Size cannot be upgraded</Neg> is unlisted.
       - This stat cannot be bypassed by purchasing Clip Size first; you will be unable to take this upgrade if you do.
+    - <Pos>Weapon projectiles cannot be reflected or deflected</Pos> is unlisted.
 - Unstable Mod: Extra Gunpowder
   - <Pos>+15% weapon damage</Pos>
-  - <Pos>+25% damage to tanks</Pos>
-  - <Neg>-20% blast radius</Neg>
-  - <Neg>-25% clip size</Neg>
+  - <Pos>+25% weapon damage to tanks</Pos>
+  - <Pos>Weapon projectiles cannot be reflected or deflected</Pos>
+  - <Neg>-20% weapon blast radius</Neg>
+  - <Neg>-25% weapon clip size</Neg>
   - Available on:
     - <Uni>Direct Hit</Uni>
   - Notes:
     - Does not seem to outperform the <Uni>Beggar's Bazooka</Uni> at tank busting at any level of credit investment, under both crit and mini-crit conditions; implicitly, then, it would also fail to outperform the <Uni>Air Strike</Uni>.
-    - Rocket jumping is still feasible even with an additional <Neg>-20% blast radius</Neg>.
+    - Rocket jumping is still feasible even with the additional <Neg>-20% blast radius</Neg>.
+    - <Pos>Weapon projectiles cannot be reflected or deflected</Pos> is unlisted.
 - Unstable Mod: Bionic Box
   - <Pos>On weapon hit: +40 health per enemy hit</Pos>
   - <Pos>+99% firing speed</Pos>
@@ -296,9 +299,7 @@ General Notes
     - <Nor>Shotgun</Nor>
     - <Uni>Panic Attack</Uni>
     - <Uni>Reserve Shooter</Uni>
-    - <Uni>Righteous Bison</Uni>
   - Notes:
-    - Mark applies to whichever target is hit last with the <Uni>Righteous Bison</Uni>.
     - Shotguns hitting multiple targets appear to select mark target arbitrarily.
       - There's some kind of predictable bullet processing order, though I did not bother to determine this order as it would only be useful information with fixed weapon spread enabled.
 - Unstable Mod: Air-raid rounds
@@ -327,12 +328,14 @@ General Notes
     - <Pos>+200% credit collection radius on wearer</Pos> is half of Scout's radial bonus.
 - Unstable Mod: Slim Rockets
   - <Pos>+15% reload speed on wearer</Pos>
-  - <Neg>-25 max health on wearer</Neg>
+  - <Neg>-50% primary reserve ammo</Neg>
+  - <Neg>-50% secondary reserve ammo</Neg>
   - Available on:
     - <Uni>B.A.S.E. Jumper</Uni>
     - <Uni>Gunboats</Uni>
   - Notes:
-    - <Pos>+15% reload speed on wearer</Pos> is incorrectly listed as '+15% faster primary reload'.
+    - <Pos>+15% reload speed on wearer</Pos> is incorrectly listed as '+15% faster primary reload', but there's no functional difference on Soldier.
+    - <Neg>-50% secondary reserve ammo</Neg> has no impact on Soldier.
 - Unstable Mod: Heavy Duty Boots
   - <Pos>+175 stomp damage</Pos>
   - <Pos>+10% move speed on wearer<Pos>
@@ -361,7 +364,7 @@ General Notes
   - <Neg>Auto-fires full clip once released</Neg>
   - Available on:
     - <Uni>Panic Attack</Uni>
-- Unstable Mod: Condensed Core
+<!-- - Unstable Mod: Condensed Core
   - <Pos>+900% weapon damage</Pos>
   - <Pos>Weapon projectiles can headshot</Pos>
   - <Pos>Weapon projectiles bounce off walls, retaining 80% of speed after each bounce</Pos>
@@ -376,12 +379,30 @@ General Notes
     - Projectile is in function replaced with a Huntsman arrow; its appearance is supposed to be replaced too like the <Uni>Crusader's Crossbow</Uni> to retain an energy theme but appears to currently be bugged.
     - <Neg>Clip Size cannot be upgraded</Neg> is unlisted.
     - Projectile is assigned a -300HUs<sup>-2</sup> vertical acceleration, but due to the short projectile lifetime and ability to bounce, effective range is generally limited by projectile expiration at 2400HU.
-    - Projectile appears to retain the 1200HU/s velocity of the <Uni>Righteous Bison</Uni>, along with other properties such as no falloff.
+    - Projectile appears to retain the 1200HU/s velocity of the <Uni>Righteous Bison</Uni>, along with other properties such as no falloff. -->
+- Unstable Mod: Burst Lens
+  - <Pos>Weapon fires four rounds at once</Pos>
+  - <Pos>Weapon reloads four rounds at once</Pos>
+  - <Pos>+50% weapon projectile speed</Pos>
+  - <Pos>Projectile penetrates teammates</Pos>
+  - <Neg>Projectiles expire after 0.3s</Neg>
+  - <Neg>-35% weapon damage</Neg>
+  - <Neg>-50% weapon reload speed</Neg>
+  - <Neg>Reload Speed cannot be upgraded</Neg>
+  - Available on:
+    - <Uni>Righteous Bison</Uni>
+  - Notes:
+    - `"reload full clip at once" 1` does not work with clip size, but sigdemo does not appear to imply this to be the case. Likely a bug as the interaction does not occur with other weapon types like the <Uni>Crusader's Crossbow</Uni>.
+    - Reload animations are fucked with clip size upgrades.
+    - <Neg>-50% weapon reload speed</Neg> is incorrectly listed as '-100% reload speed'.
+    - <Neg>Reload Speed cannot be upgraded</Neg> is unlisted.
+    - Projectiles are now limited to 360HU.
 
 ### Melee
 - Unstable Mod: Support Beacon
   - <Pos>+100% buff range while active</Pos>
   - <Pos>+25% weapon damage</Pos>
+  - <Neg>On miss: Hit yourself, idiot.</Neg>
   - Available on:
     - <Nor>Shovel</Nor>
     - <Uni>Disciplinary Action</Uni>
@@ -389,7 +410,7 @@ General Notes
     - <Uni>Escape Plan</Uni>
     - <Uni>Pain Train</Uni>
   - Notes:
-    - The description lists <Neg>'On miss: Hit yourself, idiot.'</Neg> but this attribute is not applied.
+    - <Neg>On miss: Hit yourself, idiot</Neg> does not apply bleed; this is intrinsic to the <Uni>Boston Basher</Uni>. Self-damage is half of weapon damage.
 - Unstable Mod: Magnetic Spike
   - <Pos>+150% melee range</Pos>
   - <Pos>+100% credit collection radius on wearer</Pos>
@@ -410,6 +431,13 @@ General Notes
     - <Uni>Market Gardener</Uni>
   - Notes:
     - <Pos>+50% melee range</Pos> is unlisted.
+- Stable Mod: Combo Swing
+  - <Pos>On weapon kill: Wearer gains Crits for 4s.</Pos>
+  - <Pos>+50% melee range</Pos>
+  - Available on:
+    - <Uni>Market Gardener</Uni>
+  - Notes:
+    - <Pos>+50% melee range</Pos> is unlisted.
 - Stable Mod: Survival Training
   - <Pos>+25% weapon damage</Pos>
   - <Pos>-35% damage taken from ranged sources while active</Pos>
@@ -418,10 +446,11 @@ General Notes
   - Notes:
     - The description lists <Neg>'-On miss: Hit yourself, idiot.'</Neg> but this attribute is not applied.
 - Unstable Mod: Samurai Spirit
+  - <Pos>+20% weapon attack speed
+  - <Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos>
   - <Neu>When weapon is active:</Neu>
-    - <Pos>+50% healing from all sources</Pos>
-    - <Pos>+20% move speed</Pos>
-    - <Neg>-25 max health</Neg>
+    - <Pos>+10% move speed</Pos>
+    - <Neg>+15% damage vulnerability</Neg>
   - Available on:
     - <Uni>Half-Zatoichi</Uni>
   - Notes:
@@ -511,17 +540,19 @@ General Notes
   - Available on:
     - <Uni>Manmelter</Uni>
   - Notes:
-    - <Pos>300% bleed damage bonus</Pos> is unlisted.
+    - <Pos>+300% weapon bleed damage</Pos> is unlisted.
     - For whatever reason, <Pos>On weapon hit: Bleed target for 3s</Pos> is only accurate against Giants; regular robots bleed for about 12s. This effect occurs even with no other attributes present on the upgrade. This effect is not reproducible with other weapons that I tested, like the <Uni>Boston Basher</Uni> or <Uni>Pomson 6000</Uni>. TODO: wtf?
 - Unstable Mod: Trench Gun
   - <Pos>Fires +20% bullets per shot</Pos>
   - <Pos>On weapon hit: target is ignited for 7.5s</Pos>
+  - <Pos>+150% weapon afterburn tick rate</Pos>
   - <Neg>-35% weapon accuracy</Neg>
   - Available on:
     - <Nor>Shotgun</Nor>
     - <Uni>Reserve Shooter</Uni>
   - Notes:
     - <Pos>On weapon hit: target is ignited for 7.5s</Pos> is defined as `"Set DamageType Ignite" 5`, but it only accepts a boolean value.
+    - <Pos>+150% weapon afterburn tick rate</Pos> is unlisted.
 - Unstable Mod: Australian Gas
   - <Pos>Weapon now coats players in Jarate</Pos>
   - <Neg>-75% weapon effect duration</Neg>
@@ -559,7 +590,6 @@ General Notes
     - <Nor>Fire Axe</Nor>
     - <Uni>Axtinguisher</Uni>
     - <Uni>Homewrecker</Uni>
-    - <Uni>Neon Annihilator</Uni>
     - <Uni>Powerjack</Uni>
     - <Uni>Sharpened Volcano Fragment</Uni>
 - Unstable Mod: Serrated Axe
@@ -579,7 +609,7 @@ General Notes
   - <Neg>-50% health from packs</Neg>
   - Available on:
     - <Uni>Back Scratcher</Uni>
-- Unstable Mod: Hell-Forged Head
+- Unstable Mod: Hell-Forged Heal
   - <Pos>On weapon hit: Gain up to +25 health</Pos>
   - <Pos>+150% weapon afterburn tick rate</Pos>
   - <Neg>-20% weapon damage</Neg>
@@ -595,17 +625,18 @@ General Notes
   - Notes:
     - <Pos>+55% weapon swing radius</Pos> is unlisted.
     - Both range modifiers mimic the hidden stats of the <Uni>Disciplinary Action</Uni>.
-    - Mod name is intended to be 'Hell-Forged Heal'.
 
 ## Demoman
 ### Primary
 - Unstable Mod: Slim Rockets
   - <Pos>+15% reload speed on wearer</Pos>
-  - <Neg>-25 max health on wearer</Neg>
+  - <Neg>-50% primary reserve ammo</Neg>
+  - <Neg>-50% secondary reserve ammo</Neg>
   - Available on:
     - <Uni>B.A.S.E. Jumper</Uni>
   - Notes:
     - <Pos>+15% reload speed on wearer</Pos> is incorrectly listed as '+15% faster primary reload'.
+    - <Neg>-50% primary reserve ammo</Neg> has no impact on Demoman.
 - Stable Mod: Improved Parachute
   - <Pos>200% increased air control on wearer</Pos>
   - <Pos>Parachute re-deploy allowed</Pos>
@@ -615,6 +646,7 @@ General Notes
     - This upgrade also provides <Pos>+50% primary reserve ammo</Pos>, but this weapon occupies Demoman's primary slot.
 - Unstable Mod: Mortar Mode
   - <Pos>+30% weapon firing speed</Pos>
+  - <Pos>+35% weapon blast radius</Pos>
   - <Neg>+3 degrees random weapon projectile deviation</Neg>
   - <Neg>Hold fire to load up to 4 grenades</Neg>
   - <Neg>Auto-fires full clip once released</Neg>
@@ -627,7 +659,7 @@ General Notes
 - Unstable Mod: Burst Chamber
   - <Pos>Weapon fires a bonus pipebomb per round</Pos>
   - <Pos>Launched bombs do not shatter on surfaces</Pos>
-  - <Neg>-25% weapon damage</Neg>
+  - <Neg>-35% weapon damage</Neg>
   - <Neg>-50% weapon blast radius</Neg>
   - <Neg>-50% weapon damage on contact with surfaces</Neg>
   - Available on:
@@ -640,11 +672,14 @@ General Notes
   - <Pos>On weapon hit: Refill 75% of your shield charge meter</Pos>
   - <Pos>On weapon kill: Gain all banner effects for 4s</Pos>
   - <Pos>Cannonballs explode on impact</Pos>
+  - <Pos>+20% weapon damage</Pos>
   - <Pos>-75% self damage taken from blast jumping</Pos>
-  - <Neg>-75% weapon clip size</Neg>
+  - <Neg>-50% weapon clip size</Neg>
   - Available on:
     - <Uni>Loose Cannon</Uni>
   - Notes:
+    - <Pos>On weapon kill: Gain all banner effects for 4s</Pos> is unlisted.
+      - Mini-crits last for 5s instead of 4s.
     - <Pos>-75% self damage taken from blast jumping</Pos> is unlisted.
     - <Pos>Cannonballs explode on impact</Pos> makes landing Double-donks trivial.
     - Banners are applied as `"add cond on kill" 7450` and `"minicritboost on kill" 5`
@@ -673,7 +708,7 @@ General Notes
 - Unstable Mod: Extra Adhesive
   - <Pos>-0.1s weapon sticky arm time</Pos>
   - <Pos>Stickybombs stick to enemies</Pos>
-  - <Neg>-3 max stickybombs out</Neg>
+  - <Neg>-2 max stickybombs out</Neg>
   - Available on:
     - <Nor>Stickybomb Launcher</Nor>
   - Notes:
@@ -681,7 +716,7 @@ General Notes
 - Unstable Mod: Overloaded Drum
   - <Pos>+2 max stickybombs out</Pos>
   - <Pos>+35% weapon firing speed</Pos>
-  - <Pos>-0.8s weapon sticky arm time</Pos>
+  - <Pos>-0.4s weapon sticky arm time</Pos>
   - <Pos>Stickybombs stick to enemies</Pos>
   - <Neg>+6 degrees random projectile deviation</Neg>
   - <Neg>Hold fire to load up to 8 bombs</Neg>
@@ -692,21 +727,29 @@ General Notes
     - <Uni>Scottish Resistance</Uni>
   - Notes:
     - <Pos>Stickybombs stick to enemies</Pos> is unlisted.
-    - <Pos>-0.8s weapon sticky arm time</Pos> is unlisted.
+    - <Pos>-0.4s weapon sticky arm time</Pos> is unlisted.
     - <Neg>-1000% max sticky charge time</Neg> causes you to be unable to charge stickies past minimum range.
 - Unstable Mod: Prototype Sensor
   - <Pos>+25% weapon clip size</Pos>
-  - <Pos>+40% weapon damage at full charge</Pos>
+  - <Pos>+20% weapon damage at full charge</Pos>
   - <Pos>-15% max sticky charge time</Pos>
-  - <Neg>Stickybombs fizzle 2s after landing</Neg>
+  - <Neg>Stickybombs fizzle 1.5s after landing</Neg>
   - <Neu>Projectile model appears at 2x scale</Neu>
   - Available on:
     - <Uni>Quickiebomb Launcher</Uni>
   - Notes:
-    - Could be used as a reliable long-range medic picker with mini-crits and a single sticky.
+    - <Pos>+20% weapon damage at full charge</Pos> is incorrectly listed as '+25% damage at full charge'.
+- Unstable Mod: Clash Combo
+  - <Pos>On shield kill: Wearer gains 4s of crits</Pos>
+  - <Neg>-70% reload speed on wearer</Neg>
+  - Available on:
+    - <Uni>Chargin' Targe</Uni>
+    - <Uni>Splendid Screen</Uni>
+    - <Uni>Tide Turner</Uni>
+  - Notes:
+    - <Neg>-70% reload speed on wearer</Neg> is incorrectly listed as '-35% primary reload'.
 - Unstable Mod: Pocket Incinerator
   - <Pos>+40 health from collected credits</Pos>
-  - <Pos>On shield kill: Wearer gains 3s of crits</Pos>
   - <Neg>-75% reload speed on wearer</Neg>
   - <Neg>-25% fire damage resistance on wearer</Neg>
   - <Neg>-15% blast damage resistance on wearer</Neg>
@@ -744,10 +787,8 @@ General Notes
     - <Pos>+100% credit collection radius on wearer</Pos> is a quarter of Scout's radial bonus.
 - Unstable Mod: Gardener Module
   - <Pos>Weapon deals crits while blast jumping</Pos>
-  - <Pos>+100% weapon damage vs Giants</Pos>
-  - <Pos>All players connected via Medigun beams are hit by weapon</Pos>
   - <Pos>+25% melee range</Pos>
-  - <Neg>-25% weapon attack speed</Neg>
+  - <Neg>-10% weapon attack speed</Neg>
   - Available on:
     - <Nor>Bottle</Nor>
   - Notes:
@@ -764,7 +805,8 @@ General Notes
     - <Pos>-15% damage vulnerability</Pos>
     - <Pos>+400% to turning control when charging</Pos>
     - <Pos>+1.5s to charge duration</Pos>
-  - <Neg>-20% weapon attack speed</Neg>
+  - <Pos>Weapon always crits from behind</Pos>
+  - <Neg>-25% weapon attack speed</Neg>
   - Available on:
     - <Uni>Claidheamh Mòr</Uni>
 - Unstable Mod: Shield Slam
@@ -775,7 +817,7 @@ General Notes
 
 ## Heavy
 ### Primary
-- Unstable Module: Hurricane Module
+<!-- - Unstable Module: Hurricane Module
   - <Pos>+275% weapon damage</Pos>
   - <Pos>+350% weapon damage vs Tanks</Pos>
   - <Pos>+35% weapon damage vs Giants</Pos>
@@ -805,7 +847,7 @@ General Notes
     - Note that <Neg>Cannot be revved</Neg> means this upgrade will frequently encounter the minigun implicit damage penalty period.
     - This upgrade still inherits the implicit minigun tank damage penalty.
     - Destroy Projectiles predictably does not appear to work well with this upgrade. 
-    - Rockets have the default projectile speed of 1100HU/s.
+    - Rockets have the default projectile speed of 1100HU/s. -->
 - Unstable Mod: Defense Framework
   - <Pos>Can be holstered while spinning</Pos>
   - <Pos>+30% damage resistance when below 50% health and spun up</Pos>
@@ -872,7 +914,7 @@ General Notes
     - <Uni>Panic Attack</Uni>
 - Unstable Mod: Defensive Blast
   - <Pos>75% of weapon damage is healed as life</Pos>
-  - <Pos>Weapon bullets destroy projectiles in-flight.</Pos>
+  - <Pos>Weapon bullets destroy projectiles in-flight</Pos>
   - <Neg>-10% weapon damage</Neg>
   - Available on:
     - <Uni>Family Business</Uni>
@@ -963,8 +1005,6 @@ General Notes
     - <Nor>Shotgun</Nor>
     - <Uni>Frontier Justice</Uni>
     - <Uni>Widowmaker</Uni>
-  - Notes: 
-    - This upgrade lists 'pomson projectile is 50% faster', but not only is this not applied, this upgrade cannot be used with the <Uni>Pomson 6000</Uni> at all.
 - Unstable Mod: Improved Transistors
   - <Pos>Alt-Fire: Use 100 metal to pick up your targeted building from long range</Pos>
   - <Pos>+100% weapon damage</Pos>
@@ -976,6 +1016,23 @@ General Notes
     - <Uni>Pomson 6000</Uni>
   - Notes:
     - <Pos>Projectile penetrates enemy targets</Pos> also causes the laser to appear as the <Uni>Righteous Bison</Uni> projectile, as listed in-game.
+- Unstable Mod: Burst Lens
+  - <Pos>Weapon fires four rounds at once</Pos>
+  - <Pos>Weapon reloads four rounds at once</Pos>
+  - <Pos>+50% weapon projectile speed</Pos>
+  - <Pos>Projectile penetrates teammates</Pos>
+  - <Neg>Projectiles expire after 0.3s</Neg>
+  - <Neg>-35% weapon damage</Neg>
+  - <Neg>-50% weapon reload speed</Neg>
+  - <Neg>Reload Speed cannot be upgraded</Neg>
+  - Available on:
+    - <Uni>Pomson 6000</Uni>
+  - Notes:
+    - `"reload full clip at once" 1` does not work with clip size, but sigdemo does not appear to imply this to be the case. Likely a bug as the interaction does not occur with other weapon types like the <Uni>Crusader's Crossbow</Uni>.
+    - Reload animations are fucked with clip size upgrades.
+    - <Neg>-50% weapon reload speed</Neg> is incorrectly listed as '-100% reload speed'.
+    - <Neg>Reload Speed cannot be upgraded</Neg> is unlisted.
+    - Projectiles are now limited to 360HU.
 - Unstable Mod: Compact Sensor
   - <Pos>Long-range haul cost reduced to 50 metal</Pos>
   - <Neg>-25% max metal on wearer</Neg>
@@ -996,6 +1053,7 @@ General Notes
 - Stable Mod: Combat Sensor
   - <Pos>+50% damage bonus to your sentry's target</Pos>
   - <Pos>On Kill: Gain Mini-crits for 6 seconds.</Pos>
+  - <Pos>-25% building cost</Pos>
   - Available on:
     - <Nor>Pistol</Nor>
   - Notes:
@@ -1014,6 +1072,7 @@ General Notes
   - <Pos>+500% weapon damage</Pos>
   - <Pos>On weapon hit: 10 damage dealt is returned as metal</Pos>
   - <Pos>Weapon range increased to 750HU</Pos>
+  - <Pos>Weapon bullets destroy projectiles in-flight</Pos>
   - <Neg>Secondary fire disabled</Neg>
   - <Neg>-250% weapon firing speed</Neg>
   - <Neg>-35% weapon damage vs players</Neg>
@@ -1030,6 +1089,8 @@ General Notes
       - This means that c-tapping will increase blast jump height.
       - The blast from this weapon is not strong enough to pogo, but it is strong enough to wallclimb.
       - This weapon is hitscan, time your jumps accordingly. This also means that the explosives are effectively centerfired.
+    - <Pos>Weapon bullets destroy projectiles in-flight</Pos> is unlisted.
+      - Uses 2 ticks of Destroy Projectiles; only requires one hit to destroy. Deflection event interval doesn't matter as the <Uni>Short Circuit</Uni> can't fire that fast with this upgrade.
 
 
 
@@ -1040,7 +1101,7 @@ General Notes
   - <Pos>+200% to dispenser health, ammo and metal output rate</Pos>
   - <Pos>+50% sentry range</Pos>
   - <Pos>Teleporter recharges 50% faster</Pos>
-  - <Pos>+200% weapon damage</Pos>
+  - <Pos>+50% weapon damage</Pos>
   - Available on:
     - <Uni>Gunslinger</Uni>
   - Notes:
@@ -1051,15 +1112,17 @@ General Notes
       - Ammo dispenses in 3x quantity, it does not dispense 3x faster.
       - Health is dispensed 3x faster.
     - `"construction rate increased" 2` is declared twice on this upgrade.
-    - Since the <Uni>Gunslinger</Uni> deals 195 damage base with this upgrade, it can be used to reliably kill Uber Medics.
-- Unstable Mod: Unstable Mechanisms
+- Unstable Mod: Battle Module
+  - <Pos>+200% weapon bleeding damage</Pos>
+  - <Pos>No fire damage vulnerability</Pos>
   - <Neu>When weapon is active:</Neu>
-    - <Pos>+35% sentry gun damage</Pos>
-    - <Neg>-90% metal recieved</Neg>
+    - <Pos>+20% sentry gun damage</Pos>
+    - <Pos>+50% sentry range</Pos>
+    - <Neg>-50% repair rate</Neg>
+    - <Neg>+20% damage vulnerability</Neg>
   - Available on:
     - <Uni>Southern Hospitality</Uni>
   - Notes:
-    - <Neg>-90% metal recieved</Neg> is incorrectly listed as '90% less metal from packs and dispensers'; this is relevant as it also applies to metal regen.
     - Note that the <Uni>Wrangler</Uni> provides higher DPS at any level of Sentry Firing Speed; this upgrade only provides higher single target than the <Uni>Wrangler</Uni> over the duration of a crit canteen.
       - This makes the <Uni>Jag</Uni> perhaps still superior in some rare scenarios for its increased metal refill rate, which synergises better with the <Uni>Wrangler</Uni>.
 
@@ -1068,12 +1131,21 @@ General Notes
 ### Primary
 - Unstable Mod: Support Bolts
   - <Pos>On weapon hit: Apply 4s seconds of Mad Milk to target</Pos>
-  - <Neg>-50% weapon reload speed</Neg>
+  - <Neg>-25% weapon reload speed</Neg>
   - <Neg>-50% weapon damage</Neg>
   - Available on:
     - <Uni>Crusader's Crossbow</Uni>
   - Notes:
     - This has the same base duration as the Mad Milk Syringe's maximum.
+- Unstable Mod: Burst Reload
+  - <Pos>Weapon reloads its entire clip at once</Pos>
+  - <Neg>-75% weapon reload speed</Neg>
+  - <Neg>-20% weapon damage</Neg>
+  - <Neg>Reload Speed cannot be upgraded</Neg>
+  - Available on:
+    - <Uni>Crusader's Crossbow</Uni>
+  - Notes:
+    - <Neg>Reload Speed cannot be upgraded</Neg> is unlisted.
 - Unstable Mod: Biohazard Needle
   - <Pos>On weapon hit: Apply 3s seconds of Jarate to target</Pos>
   - <Neg>-35% weapon reload speed</Neg>
@@ -1133,7 +1205,7 @@ General Notes
   - <Neg>-30% weapon damage</Neg>
   - Available on:
     - <Uni>Amputator</Uni>
-- Unstable Mod: Vamprism Module
+<!-- - Unstable Mod: Vamprism Module
   - <Pos>On weapon hit: Heal nearby allies for 24 health, up to once every 0.17s</Pos>
   - <Pos>On weapon taunt: Apply the Battalion's Backup and Buff Banner effect to your team for 10s</Pos>
   - <Neu>When weapon is active:</Neu>
@@ -1143,7 +1215,7 @@ General Notes
     - <Uni>Amputator</Uni>
   - Notes:
     - This upgrade provides both conditions 26 and 16, which means they will conflict with their respective banners if both this upgrade and banners are active simultaneously.
-    - Note that the medic does not recieve the buffs from taunting, but instead on weapon hit, overriding the heal component. Teammates do not receive buffs on hit, only the heal component. This seems to be caused by an oversight in the interaction between `"effect cond override"` and `"aoe heal chance"`.
+    - Note that the medic does not recieve the buffs from taunting, but instead on weapon hit, overriding the heal component. Teammates do not receive buffs on hit, only the heal component. This seems to be caused by an oversight in the interaction between `"effect cond override"` and `"aoe heal chance"`. -->
 
 ## Sniper
 ### Primary
@@ -1156,17 +1228,21 @@ General Notes
     - <Nor>Sniper Rifle</Nor>
     - <Uni>Bazaar Bargain</Uni>
     - <Uni>Classic</Uni>
-    - <Uni>Machina</Uni>
     - <Uni>Sydney Sleeper</Uni>
   - Notes:
     - <Pos>-40% zoom time</Pos> is bugged in the same manner as reload speed; it applies only to consecutive re-zooms, so `cl_autorezoom 1` must be set to notice a beneift, or one must hold down right click between shots with `cl_autorezoom 0`.
       - Note that increases to zoom time also cause shots to start charging faster.
+- Unstable Mod: Rifle Mastery
+  - Same as above, but no <Pos>+20% weapon damage at full charge</Pos>.
+  - Available on:
+    - <Uni>Machina</Uni>
 - Unstable Mod: Rubber Compound
   - <Pos>+300% weapon bleeding damage</Pos>
   - <Pos>Projectiles home to targets after 3.25s</Pos>
   - <Pos>Projectiles bounce off walls, retaining 95% of their speed after each bounce</Pos>
+  - <Pos>Weapon projectiles cannot be reflected or deflected</Pos>
   - <Neg>No headshots</Neg>
-  - <Neg>-35% damage vs players</Neg>
+  - <Neg>-25% damage vs players</Neg>
   - <Neg>Projectiles expire after 3.5s</Neg>
   - Available on:
     - <Uni>Huntsman</Uni>
@@ -1192,14 +1268,24 @@ General Notes
 - Unstable Mod: Headshot Mode
   - <Pos>Weapon can headshot</Pos>
   - <Pos>Weapon has increased headshot explosion radius and damage to nearby enemies</Pos>
-  - <Neg>-80% weapon Explosive Headshot damage</Neg>
+  - <Neg>-90% weapon Explosive Headshot damage</Neg>
   - <Neg>-50% weapon firing speed</Neg>
   - Available on:
     - <Nor>SMG</Nor>
   - Notes:
     - <Pos>Increased headshot explosion radius and damage to nearby enemies</Pos> is equivalent to one tick of Explosive Headshot.
     - This seems like it would be more useful for its stun ability rather than damage, but note it has only slightly worse DPS vs a single target to a <Uni>Hitman's Heatmaker</Uni> that is focused with 3 ticks of reload speed; it has superior DPS to an unfocus rifle with the same reload speed upgrades.
-<!--### Melee-->
+### Melee
+- Unstable Mod: Biohazard Blade ($200)
+  - <Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos>
+  - <Pos>+200% weapon bleed damage</Pos>
+  - <Pos>+20% weapon bleed tick rate</Pos>
+  - <Neg>-15% weapon damage</Neg>
+  - Available on:
+    - <Uni>Tribalman's Shiv</Uni>
+  - Notes:
+    - Deals ~263 damage total in a single swing over bleed duration.
+    - <Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos> is incorrectly listed as 'Applies Jarate for 3 seconds'.
 
 ## Spy
 ### Primary
