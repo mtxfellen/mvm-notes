@@ -7,7 +7,6 @@ Uni {color:rgb(255,215,0)}
 </style>
 
 # Cactus' Overclocks for Galvanized Gauntlet
-#### CowsVsMachines Top Secret Document
 <p></p>
 Overclock Upgrades are an attempt to:
 
