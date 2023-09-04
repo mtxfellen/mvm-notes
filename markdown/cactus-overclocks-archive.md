@@ -18,11 +18,6 @@ underpowered,
 The specifics of these upgrades are detailed in this document. A maximum of one overclock is allowed per weapon.
 
 <p></p>
-At the time of writing (TODO), the Event missions with Overclock Upgrades available are:
-
-- no_idea_lmao
-
-<p></p>
 At the time of writing, the Archive missions with Overclock Upgrades available are:
 
 - Decay - Diptera Dash (Intermediate)
@@ -52,34 +47,11 @@ Weapon stat reference
 - Weapon resistances and vulernability
   - Like stock weapons that provide these stats, they do not stack additively with resistances. No immortal babies.
 
-
 <p></p>
-STUFF_TO_FORMAT
+General Notes
 
 - If one somehow manages to have negative cash, upgrades are bugged and will not let you purchase them, even though they cost nothing.
-- ClassNames may have more available
 - Clip size decreases do not always apply immediately, meaning upgrades that provide it can be exploited to begin the round with original clip capacity.
-- 'The binary representation of...'
-	```
-  DisallowUpgrade	  //Advanced syntax
-	{
-		Upgrade	"projectile gravity" // Upgrade name. In case of extended upgrades, the name of the attribute
-		MaxLevel 0 // Maximum allowed level
-		IfUpgradePresent // Other upgrades that should not be present
-		{
-			"clip size upgrade atomic" 1 // "clip size upgrade atomic" at level 1 or more blocks this upgrade 
-		}
-	}
-    DisallowUpgrade      //Advanced syntax
-    {
-        Upgrade	"clip size upgrade atomic" // Upgrade name. In case of extended upgrades, the name of the attribute
-        MaxLevel 0 // Maximum allowed level
-        IfUpgradePresent // Other upgrades that should not be present
-        {
-            "projectile gravity" 1 // "damage bonus hidden" at level 1 or more blocks this upgrade 
-        }
-    }
-    ```
 
 ## Scout
 ### Primary
@@ -394,6 +366,7 @@ STUFF_TO_FORMAT
   - <Pos>Weapon projectiles can headshot</Pos>
   - <Pos>Weapon projectiles bounce off walls, retaining 80% of speed after each bounce</Pos>
   - <Neg>Weapon projectiles cannot hit the same target multiple times</Neg>
+  - <Neg>Clip Size cannot be upgraded</Neg>
   - <Neg>Weapon projectiles now fire in an arc</Neg>
   - <Neg>Weapon projectiles expire after 2s</Neg>
   - Available on:
@@ -401,6 +374,7 @@ STUFF_TO_FORMAT
   - Notes:
     - Base damage of 66.
     - Projectile is in function replaced with a Huntsman arrow; its appearance is supposed to be replaced too like the <Uni>Crusader's Crossbow</Uni> to retain an energy theme but appears to currently be bugged.
+    - <Neg>Clip Size cannot be upgraded</Neg> is unlisted.
     - Projectile is assigned a -300HUs<sup>-2</sup> vertical acceleration, but due to the short projectile lifetime and ability to bounce, effective range is generally limited by projectile expiration at 2400HU.
     - Projectile appears to retain the 1200HU/s velocity of the <Uni>Righteous Bison</Uni>, along with other properties such as no falloff.
 
@@ -673,7 +647,7 @@ STUFF_TO_FORMAT
     - <Pos>-75% self damage taken from blast jumping</Pos> is unlisted.
     - <Pos>Cannonballs explode on impact</Pos> makes landing Double-donks trivial.
     - Banners are applied as `"add cond on kill" 7450` and `"minicritboost on kill" 5`
-      - The binary representation of 7450 reveals that conditions 26 and 29 are used, which means they will conflict with their respective banners, but the mini-crits component will not.
+      - This upgrade provides both conditions 26 and 29, which means they this upgrade will conflict with the respective banners, but the mini-crits component will not.
     - `"grenade launcher mortar mode" 0` is defined but does not appear to do anything.
 - Unstable Mod: Cash Magnet
   - <Pos>+200% credit collection radius on wearer</Pos>
@@ -910,7 +884,7 @@ STUFF_TO_FORMAT
   - Available on:
     - <Uni>Buffalo Steak Sandvich</Uni>
   - Notes:
-    - The binary representation of 2694416 reveals that conditions 41, 29 and 16 are used. This of course means that the <Uni>Concheror</Uni> will interfere with the buff provided, but also means that the  <Uni>Buff Banner</Uni> will too, as condition 16 is used incorrectly instead of 19.
+    - This upgrade provides conditions 41, 29 and 16. This of course means that the <Uni>Concheror</Uni> will interfere with the buff provided, but also means that the  <Uni>Buff Banner</Uni> will too, as condition 16 is presumably used incorrectly instead of 19.
 
 ### Melee
 - Stable Mod: More Storage Space
@@ -1167,7 +1141,7 @@ STUFF_TO_FORMAT
   - Available on:
     - <Uni>Amputator</Uni>
   - Notes:
-    - The binary representation of 6672 reveals that conditions 26 and 16 are used, which means they will conflict with their respective banners if both are active simultaneously.
+    - This upgrade provides both conditions 26 and 16, which means they will conflict with their respective banners if both this upgrade and banners are active simultaneously.
     - Note that the medic does not recieve the buffs from taunting, but instead on weapon hit, overriding the heal component. Teammates do not receive buffs on hit, only the heal component. This seems to be caused by an oversight in the interaction between `"effect cond override"` and `"aoe heal chance"`.
 
 ## Sniper
