@@ -1,10 +1,40 @@
+<title>GG Overclocks | fellen's MvM Notes</title>
+<link rel="icon" type="image/png" sizes="184x184" href="https://avatars.akamai.steamstatic.com/319d7b492c3a39b04abd80eead00c17590c49e2e_full.jpg">
 <style>
+/* tf2 colouring */
 Pos {color:rgb(153,204,255)}
 Neg {color:rgb(255,64,64)}
 Neu {color:rgb(235,226,202)}
 Nor {color:rgb(178,178,178)}
 Uni {color:rgb(255,215,0)}
+
+/* temp theming */
+body {
+	background-color: #000000;
+	color: #d4d4d4;
+	font-family: 'Calibri';
+	width: 800px;
+}
+
+a:link {
+  color: #2f81f7;
+}
+
+a:visited {
+  color: #2f81f7;
+}
 </style>
+
+<!-- META PROPERTIES -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="fellen">
+<meta property="og:title" content="Galvanized Gauntlet Overclocks">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mtxfellen.github.io">
+<meta property="og:site_name" content="fellen's MvM Notes">
+<meta property="og:description" content="A list of all Overclock Upgrades in the Galvanized Gauntlet tour.">
+<meta property="og:image" content="https://avatars.akamai.steamstatic.com/319d7b492c3a39b04abd80eead00c17590c49e2e_full.jpg">
 
 # Cactus' Overclocks for Galvanized Gauntlet
 <p></p>
@@ -19,13 +49,90 @@ The specifics of these upgrades are detailed in this document. A maximum of one 
 <p></p>
 At the time of writing, the Galvanized Gauntlet missions with Overclock Upgrades available are:
 
+- Bronx - Point of Impact (Advanced)
+- Goldpit - Race Condition (Advanced)
 - Lotus - LED-Motif (Advanced)
 - Quetzal - Banana Barricade (Expert)
 - Skangus - Metal Scorn (Advanced)
 - Steep - Drill Down Disaster (Advanced)
+- Waterlogged - Crydodoom (Advanced)
+
+<!-- - Humbridge - Hampton Helix (Advanced) -->
+
+<details>
+<summary><font size="+2">Page Contents</font></summary>
+<div>
+<ul>
+  <li><a href="#scout">Scout</a>
+  <ul>
+    <li><a href="#scout_primary">Primary</a></li>
+    <li><a href="#scout_secondary">Secondary</a></li>
+    <li><a href="#scout_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#soldier">Soldier</a>
+  <ul>
+    <li><a href="#soldier_primary">Primary</a></li>
+    <li><a href="#soldier_secondary">Secondary</a></li>
+    <li><a href="#soldier_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#pyro">Pyro</a>
+  <ul>
+    <li><a href="#pyro_primary">Primary</a></li>
+    <li><a href="#pyro_secondary">Secondary</a></li>
+    <li><a href="#pyro_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#demoman">Demoman</a>
+  <ul>
+    <li><a href="#demoman_primary">Primary</a></li>
+    <li><a href="#demoman_secondary">Secondary</a></li>
+    <li><a href="#demoman_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#heavy">Heavy</a>
+  <ul>
+    <li><a href="#heavy_primary">Primary</a></li>
+    <li><a href="#heavy_secondary">Secondary</a></li>
+    <li><a href="#heavy_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#engineer">Engineer</a>
+  <ul>
+    <li><a href="#engineer_primary">Primary</a></li>
+    <li><a href="#engineer_secondary">Secondary</a></li>
+    <li><a href="#engineer_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#medic">Medic</a>
+  <ul>
+    <li><a href="#medic_primary">Primary</a></li>
+    <li><a href="#medic_secondary">Secondary</a></li>
+    <li><a href="#medic_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#sniper">Sniper</a>
+  <ul>
+    <li><a href="#sniper_primary">Primary</a></li>
+    <li><a href="#sniper_secondary">Secondary</a></li>
+    <li><a href="#sniper_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#spy">Spy</a>
+  <ul>
+    <li><a href="#spy_primary">Primary</a></li>
+    <li>Secondary</li>
+    <li>Melee</li>
+    <li><a href="#spy_pda2">PDA2</a></li>
+  </ul>
+  </li>
+</ul>
+</div>
+</details>
 
 <p></p>
-Weapon stat reference
+Weapon stats reference
 
 - <Pos>Up to <b>%s1</b>% increased fire rate as health decreases</Pos>
     - Minimum fire rate is retained at 0.9-1x current maximum HP
@@ -47,101 +154,103 @@ General Notes
 - Clip size decreases do not always apply immediately, meaning upgrades that provide it can be exploited to begin the round with original clip capacity.
 
 ## Scout
-### Primary
+<h3 id="scout_primary">Primary</h3>
+
 - Unstable Mod: Cycle Overload
   - <Pos>+25% weapon damage</Pos>
-  - <Pos>+35% weapon firing speed</Pos>
+  - <Pos>+40% weapon firing speed</Pos>
   - <Neg>-150% weapon reload speed</Neg>
   - <Neg>-100% weapon accuracy</Neg>
   - Available on:
     - <Nor>Scattergun</Nor>
     - <Uni>Back Scatter</Uni>
   - Notes:
-    - <Neg>-150% weapon reload speed</Neg> is incorrectly listed as '60% slower reload'.
+    - <Neg>-150% weapon reload speed</Neg> is incorrectly listed as '100% slower reload'.
 - Unstable Mod: Vintage Model
-    - <Pos>Boost is not reduced on taking damage</Pos>
-    - <Pos>+40% weapon accuracy</Pos>
-    - <Neg>No double jump on wearer</Neg>
-    - <Neg>-10% move speed on wearer</Neg>
+  - <Pos>Boost is not reduced on taking damage</Pos>
+  - <Pos>+40% weapon accuracy</Pos>
+  - <Neg>No double jump on wearer</Neg>
+  - <Neg>-10% move speed on wearer</Neg>
   - Available on:
     - <Uni>Baby Face's Blaster</Uni>
   - Notes:
     - Base move speed change: 119.7%/360HU/s -> 106.4%/320HU/s
 - Unstable Mod: Expanded Crit Module
-    - <Pos>Weapon always crits from behind</Pos>
-    - <Neg>-46% weapon accuracy</Neg>
-    - <Neg>-25% weapon reload speed</Neg>
+  - <Pos>Weapon always crits from behind</Pos>
+  - <Neg>-46% weapon accuracy</Neg>
+  - <Neg>-25% weapon reload speed</Neg>
   - Available on:
     - <Uni>Back Scatter</Uni>
   - Notes:
     - <Pos>Weapon always crits from behind</Pos> does not appear to be as forgiving in angle as the <Uni>Back Scatter's</Uni> default stat <Pos>Mini-crits targets when fired at their back from close range</Pos>, but will of course work from any range.
 - Unstable Mod: Special Delivery
-    - <Pos>+25 max health on wearer</Pos>
-    - <Pos>+46% weapon reload speed</Pos>
-    - <Neg>No double jump on wearer</Neg>
-    - <Neg>-10% weapon firing speed</Neg>
+  - <Pos>+25 max health on wearer</Pos>
+  - <Pos>+46% weapon reload speed</Pos>
+  - <Neg>No double jump on wearer</Neg>
+  - <Neg>-10% weapon firing speed</Neg>
   - Available on:
     - <Uni>Shortstop</Uni>
   - Notes:
     - <Neg>Increase in push force taken from damage and airblast</Neg> appears to be altered to be provided globally rather than when active.
 - Unstable Mod:: Slim Slugs
-    - <Pos>+10% weapon damage</Pos>
-    - <Pos>+20% weapon accuracy</Pos>
-    - <Pos>No weapon knockback on target</Pos>
-    - <Neg>No weapon knockback on shooter</Pos>
-    - <Neg>-15% weapon reload speed</Neg>
+  - <Pos>+10% weapon damage</Pos>
+  - <Pos>+20% weapon accuracy</Pos>
+  - <Pos>No weapon knockback on target</Pos>
+  - <Neg>No weapon knockback on shooter</Pos>
+  - <Neg>-15% weapon reload speed</Neg>
   - Available on:
     - <Uni>Force-a-Nature</Uni>
   - Notes:
     - The additional colon exists in-game.
     - When ghost upgraded with Firing Speed, the knockback removal stat used to occasionally bug; have since been unable to reproduce this behaviour since HH2 and this note will be removed if the bug is not reported any further.
-- Unstable Mod: Super Shells
-    - <Pos>Hype effect is replaced with mini-crits</Pos>
-    - <Neg>-25% weapon reload speed</Neg>
-    - <Neg>-50% weapon accuracy</Neg>
+<!--- Unstable Mod: Super Shells
+  - <Pos>Hype effect is replaced with mini-crits</Pos>
+  - <Neg>-25% weapon reload speed</Neg>
+  - <Neg>-50% weapon accuracy</Neg>
   - Available on:
     - <Uni>Soda Popper</Uni>
   - Notes:
-    - Effect override uses condition 19, meaning the <Uni>Crit-a-cola</Uni> will drain Hype effect when active.
+    - Effect override uses condition 19, meaning the <Uni>Crit-a-cola</Uni> will drain Hype effect when active.-->
 
-### Secondary
+<h3 id="scout_secondary">Secondary</h3>
+
 - Stable Mod: Combo Bullets
-    - <Pos>On weapon kill: Wearer gains Crits for 3s.</Pos>
-    - <Pos>+25% weapon damage</Pos>
-    - Available on:
-        - <Nor>Pistol</Nor>
-        - <Uni>Pretty Boy's Pocket Pistol</Uni>
-        - <Uni>Winger</Uni>
-    - Notes:
-        - 'AllowPlayerClass Sniper' is provided for this upgrade, but does not target any sniper weapons.
+  - <Pos>On weapon kill: Wearer gains Crits for 3s.</Pos>
+  - <Pos>+25% weapon damage</Pos>
+  - Available on:
+    - <Nor>Pistol</Nor>
+    - <Uni>Pretty Boy's Pocket Pistol</Uni>
+    - <Uni>Winger</Uni>
+  - Notes:
+    - 'AllowPlayerClass Sniper' is provided for this upgrade, but does not target any sniper weapons.
 - Unstable Mod: Dairy Mags
-    - <Pos>On weapon hit: Apply 2.5s seconds of Mad Milk to target</Pos>
-    - <Neg>-75% weapon firing speed</Neg>
-    - Available on:
-        - <Nor>Pistol</Nor>
-        - <Uni>Pretty Boy's Pocket Pistol</Uni>
-        - <Uni>Winger</Uni>
-    - Notes:
-        - The <Uni>Mad Milk</Uni> on hit is not additive and only refreshes the duration of the condition.
-        - Buying -35% Speed on Target and swapping to this does not work.
+  - <Pos>On weapon hit: Apply 2.5s seconds of Mad Milk to target</Pos>
+  - <Neg>-75% weapon firing speed</Neg>
+  - Available on:
+    - <Nor>Pistol</Nor>
+    - <Uni>Pretty Boy's Pocket Pistol</Uni>
+    - <Uni>Winger</Uni>
+  - Notes:
+    - The <Uni>Mad Milk</Uni> on hit is not additive and only refreshes the duration of the condition.
+    - Buying -35% Speed on Target and swapping to this does not work.
 - Stable Mod: Battalion's Bonk-up
-    - <Neu>Replaces Bonk! Effect with Battalion's Backup effect</Neu>
-    - <Pos>Stun and knockback immune during effect</Pos>
-    - <Pos>Weapon taunt can be used while airborne</Pos>
-    - Available on:
-        - <Uni>Bonk! Atomic Punch</Uni>
-    - Notes:
-        - Effect override uses condition 26, meaning the <Uni>Battalion's Backup</Uni> will erase Hype effect if the Scout leaves its radius whilst both are active.
-        - Appears to last 10s instead of the expected 8s, though this does not appear to be intended. Possibly a consequence of the condition used itself.
-        - <Pos>Stun and knockback immune during effect</Pos> is unlisted, provided by condition 28.
-          - The <Uni>Quick-Fix</Uni> particles may be misleading; the effect does not provide any healing.
-        - <Pos>Weapon taunt can be used while airborne</Pos> is unlisted.
-          - This means the taunt cannot be cancelled, but this weapon only applies its effect at the end of the taunt anyway.
+  - <Neu>Replaces Bonk! Effect with Battalion's Backup effect</Neu>
+  - <Pos>Stun and knockback immune during effect</Pos>
+  - <Pos>Weapon taunt can be used while airborne</Pos>
+  - Available on:
+    - <Uni>Bonk! Atomic Punch</Uni>
+  - Notes:
+    - Effect override uses condition 26, meaning the <Uni>Battalion's Backup</Uni> will erase Hype effect if the Scout leaves its radius whilst both are active.
+    - Appears to last 10s instead of the expected 8s, though this does not appear to be intended. Possibly a consequence of the condition used itself.
+    - <Pos>Stun and knockback immune during effect</Pos> is unlisted, provided by condition 28.
+      - The <Uni>Quick-Fix</Uni> particles may be misleading; the effect does not provide any healing.
+    - <Pos>Weapon taunt can be used while airborne</Pos> is unlisted.
+      - This means the taunt cannot be cancelled, but this weapon only applies its effect at the end of the taunt anyway.
 - Stable Mod: Hot Knife
-    - <Pos>On weapon hit: Target is ignited for 7.5s</Pos>
-    - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
-    - <Pos>All players connected via Medigun beams are hit by weapon</Pos>
-    - <Neg>-50% weapon bleed damage</Neg>
+  - <Pos>On weapon hit: Target is ignited for 7.5s</Pos>
+  - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
+  - <Pos>All players connected via Medigun beams are hit by weapon</Pos>
+  - <Neg>-50% weapon bleed damage</Neg>
   - Available on:
     - <Uni>Flying Guillotine</Uni>
   - Notes:
@@ -153,64 +262,66 @@ General Notes
     - Given these mechanics, against Giant Medics it makes the most sense to use the <Uni>Flying Guillotine</Uni> on their target for maximum damage to the medic.
     - Against a single target, one cleaver will deal a total of 155 damage.
 
-### Melee
+<h3 id="scout_melee">Melee</h3>
+
 - Unstable Mod: Support Swing
-    - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
-    - <Pos>On weapon hit: Apply 6s seconds of Mad Milk to target</Pos>
-    - <Neg>-25 max health on wearer</Neg>
-    - <Neg>-50% weapon damage</Neg>
-    - Available on:
-        - <Nor>Bat</Nor>
-        - <Uni>Atomizer</Uni>
-        - <Uni>Boston Basher</Uni>
-        - <Uni>Candy Cane</Uni>
-        - <Uni>Holy Mackerel</Uni>
-        - <Uni>Sandman</Uni>
-        - <Uni>Sun-on-a-Stick</Uni>
-        - <Uni>Wrap Assassin</Uni>
-    - Notes:
-        - Like the <Uni>Sandman's</Uni> default mark upgrade, both the <Uni>Wrap Assassin</Uni> and  <Uni>Sandman</Uni> can mark using their ball with this upgrade.
-        - The <Uni>Wrap Assassin</Uni> deals negative melee damage (-9) with this upgrade, causing you to heal your target instead.
+  - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
+  - <Pos>On weapon hit: Apply 6s seconds of Mad Milk to target</Pos>
+  - <Neg>-25 max health on wearer</Neg>
+  - <Neg>-50% weapon damage</Neg>
+  - Available on:
+    - <Nor>Bat</Nor>
+    - <Uni>Atomizer</Uni>
+    - <Uni>Boston Basher</Uni>
+    - <Uni>Candy Cane</Uni>
+    - <Uni>Holy Mackerel</Uni>
+    - <Uni>Sandman</Uni>
+    - <Uni>Sun-on-a-Stick</Uni>
+    - <Uni>Wrap Assassin</Uni>
+  - Notes:
+    - Like the <Uni>Sandman's</Uni> default mark upgrade, both the <Uni>Wrap Assassin</Uni> and  <Uni>Sandman</Uni> can mark using their ball with this upgrade.
+    - The <Uni>Wrap Assassin</Uni> deals negative melee damage (-9) with this upgrade, causing you to heal your target instead.
 - Unstable Mod: Craftsman's Bat
-    - <Pos>+15 max health on wearer</Pos>
-    - <Pos>On weapon hit: Bleed target for 5s</Pos>
-    - <Pos>+300% weapon bleeding damage</Pos>
-    - <Neg>-35% swing speed</Pos>
-    - Available on:
-        - <Uni>Boston Basher</Uni>
-        - <Uni>Sandman</Uni>
-    - Notes:
-        - Bleed damage multiplier also applies to yourself; if you miss with the Boston Basher and aren't buffed, you will die.
-        - <Pos>+300% weapon bleeding damage</Pos> is incorrectly listed as '2x bleed damage'
-        - `"mult bleeding dmg"` is accidentally defined twice for this upgrade, first at 3 and then at 2; the 4x bleed takes priority.
+  - <Pos>+15 max health on wearer</Pos>
+  - <Pos>On weapon hit: Bleed target for 5s</Pos>
+  - <Pos>+300% weapon bleeding damage</Pos>
+  - <Neg>-35% swing speed</Pos>
+  - Available on:
+    - <Uni>Boston Basher</Uni>
+    - <Uni>Sandman</Uni>
+  - Notes:
+    - Bleed damage multiplier also applies to yourself; if you miss with the Boston Basher and aren't buffed, you will die.
+    - <Pos>+300% weapon bleeding damage</Pos> is incorrectly listed as '2x bleed damage'
+    - `"mult bleeding dmg"` is accidentally defined twice for this upgrade, first at 3 and then at 2; the 4x bleed takes priority.
 - Unstable Mod: Sugar Shock
-    - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
-    - <Pos>Wearer blast damage vulnerability removed</Pos>
-    - <Pos>On weapon hit: Gain a speed boost for 5s</Pos>
-    - <Neg>-15 max health on wearer</Neg>
-    - Available on:
-        - <Uni>Candy Cane</Uni>
+  - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
+  - <Pos>Wearer blast damage vulnerability removed</Pos>
+  - <Pos>On weapon hit: Gain a speed boost for 5s</Pos>
+  - <Neg>-15 max health on wearer</Neg>
+  - Available on:
+    - <Uni>Candy Cane</Uni>
 - Unstable Mod: Soul Scorcher
-    - <Pos>+600% base weapon damage vs burning players</Pos>
-    - <Pos>All players connected via Medigun beams are hit by weapon</Pos>
-    - <Neg>90% damage penalty vs non-burning players</Neg>
-    - Available on:
-        - <Uni>Sun-on-a-Stick</Uni>
-    - Notes:
-        - <Pos>+600% base weapon damage vs burning players</Pos> is incorrectly listed as '6x damage to burning enemies'.
-        - Deals 236 damage vs burning targets.
-          - (35\*0.75\*3) + 6(35\*0.75) = 236.25
-        - Burning target damage bonus is not inherited down the medi-chain; target must be ignited or they will only recieve 3-8 damage.
-          - Conversely, the target you hit does not have to be ignited to get the damage bonus down the chain.
+  - <Pos>+600% base weapon damage vs burning players</Pos>
+  - <Pos>All players connected via Medigun beams are hit by weapon</Pos>
+  - <Neg>90% damage penalty vs non-burning players</Neg>
+  - Available on:
+    - <Uni>Sun-on-a-Stick</Uni>
+  - Notes:
+    - <Pos>+600% base weapon damage vs burning players</Pos> is incorrectly listed as '6x damage to burning enemies'.
+    - Deals 236 damage vs burning targets.
+      - (35\*0.75\*3) + 6(35\*0.75) = 236.25
+    - Burning target damage bonus is not inherited down the medi-chain; target must be ignited or they will only recieve 3-8 damage.
+      - Conversely, the target you hit does not have to be ignited to get the damage bonus down the chain.
 - Unstable Mod: Heavy Material
-    - <Neu>When weapon is active:</Neu>
-      - <Pos>-30% damage from ranged sources</Pos>
-      - <Neg>-10% move speed</Neg>
-    - Available on:
-        - <Uni>Atomizer</Uni>
+  - <Neu>When weapon is active:</Neu>
+    - <Pos>-30% damage from ranged sources</Pos>
+    - <Neg>-10% move speed</Neg>
+  - Available on:
+      - <Uni>Atomizer</Uni>
 
 ## Soldier
-### Primary
+<h3 id="soldier_primary">Primary</h3>
+
 - Unstable Mod: RPG Module
   - <Pos>+25% weapon damage</Pos>
   - <Pos>+35% weapon blast radius</Pos>
@@ -291,7 +402,8 @@ General Notes
       - This is because `"rocketjump attackrate bonus"` is a positive multiplier of the default firing delay, so the real firing interval is about 0.08s.
     - Although the weapon lists '+25% increase to rocket jump *bonuses*', it does not actually apply <Neg>-25% weapon blast radius while blast jumping</Neg>, as this stat applies as a fixed 0.8 radius multiplier.
 
-### Secondary
+<h3 id="soldier_secondary">Secondary</h3>
+
 - Stable Mod: Debuff Rounds
   - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
   - Available on:
@@ -349,7 +461,7 @@ General Notes
   - Available on:
     - <Uni>B.A.S.E. Jumper</Uni>
 - Stable Mod: Combo Slugs
-  - <Pos>+25% weapon damage</Pos>
+  - <Pos>+35% weapon damage</Pos>
   - <Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos>
   - Available on:
     - <Uni>Panic Attack</Uni>
@@ -397,7 +509,8 @@ General Notes
     - <Neg>Reload Speed cannot be upgraded</Neg> is unlisted.
     - Projectiles are now limited to 360HU.
 
-### Melee
+<h3 id="soldier_melee">Melee</h3>
+
 - Unstable Mod: Support Beacon
   - <Pos>+100% buff range while active</Pos>
   - <Pos>+25% weapon damage</Pos>
@@ -432,11 +545,11 @@ General Notes
     - <Pos>+50% melee range</Pos> is unlisted.
 - Stable Mod: Combo Swing
   - <Pos>On weapon kill: Wearer gains Crits for 4s.</Pos>
-  - <Pos>+50% melee range</Pos>
+  - <Pos>+100% melee range</Pos>
   - Available on:
     - <Uni>Market Gardener</Uni>
   - Notes:
-    - <Pos>+50% melee range</Pos> is unlisted.
+    - <Pos>+100% melee range</Pos> is unlisted.
 - Stable Mod: Survival Training
   - <Pos>+25% weapon damage</Pos>
   - <Pos>-35% damage taken from ranged sources while active</Pos>
@@ -457,9 +570,10 @@ General Notes
     - Base move speed change: 80%/240HU/s -> 96%/288HU/s
 
 ## Pyro
-### Primary
+<h3 id="pyro_primary">Primary</h3>
+
 - Unstable Mod: Caustic Fumes
-  - <Pos>+15% weapon damage</Pos>
+  - <Pos>+10% weapon damage</Pos>
   - <Pos>Attacks with this weapon pierce damage resistance effects and bonuses</Pos>
   - <Pos>On weapon hit: Apply Gas to target</Pos>
   - <Neg>Airblast no longer pushes back players</Neg>
@@ -491,7 +605,8 @@ General Notes
   - Notes:
     - Base move speed change: 100%/300HU/s -> 110%/330HU/s
 
-### Secondary
+<h3 id="pyro_secondary">Secondary</h3>
+
 - Stable Mod: Titanium Soles
   - <Pos>+200% credit collection radius on wearer</Pos>
   - <Pos>Wearer never takes falling damage</Pos>
@@ -532,7 +647,7 @@ General Notes
   - Notes:
     - <Neg>-35% weapon projectile speed</Neg> is interpretable as a positive with the <Uni>Detonator</Uni> as it increases the length of the effective manual detonation window.
 - Unstable Mod: Molten Core
-  - <Pos>+75% weapon afterburn tick rate</Pos>
+  - <Pos>+200% weapon afterburn tick rate</Pos>
   - <Pos>On weapon hit: Bleed target for 3s</Pos>
   - <Pos>+300% weapon bleed damage</Pos>
   - <Neg>-50% weapon projectile speed</Neg>
@@ -563,7 +678,8 @@ General Notes
     - The lingering effect of the gas cloud is bugged and does not apply <Uni>Jarate</Uni>, but instead Gas. Enemies will not be inflicted with Gas if they are stood in the initial application radius.
     - <Neg>-75% weapon effect duration</Neg> is incorrectly listed as '-70% effect duration'.
 
-### Melee
+<h3 id="pyro_melee">Melee</h3>
+
 - Unstable Mod: Heavy Mallet
   - <Neg>-25% weapon damage vs players</Neg>
   - <Neu>When weapon is active:</Neu>
@@ -626,7 +742,8 @@ General Notes
     - Both range modifiers mimic the hidden stats of the <Uni>Disciplinary Action</Uni>.
 
 ## Demoman
-### Primary
+<h3 id="demoman_primary">Primary</h3>
+
 - Unstable Mod: Slim Rockets
   - <Pos>+15% reload speed on wearer</Pos>
   - <Neg>-50% primary reserve ammo</Neg>
@@ -695,7 +812,8 @@ General Notes
     - <Pos>+200% credit collection radius on wearer</Pos> is half of Scout's radial bonus.
     - <Pos>Stickybombs stick to enemies</Pos> is defined for this weapon, but does nothing nature of not being a stickybomb launcher.
 
-### Secondary
+<h3 id="demoman_secondary">Secondary</h3>
+
 - Stable Mod: Titanium Soles
   - <Pos>+200% credit collection radius on wearer</Pos>
   - <Pos>Wearer never takes falling damage</Pos>
@@ -772,7 +890,8 @@ General Notes
   - Notes: 
     - <Neg>-15% fire damage resistance on wearer</Neg> is incorrectly listed at -25%.
 
-### Melee
+<h3 id="demoman_melee">Melee</h3>
+
 - Unstable Mod: Magnetic Spike
   - <Pos>+150% melee range</Pos>
   - <Pos>+100% credit collection radius on wearer</Pos>
@@ -815,7 +934,8 @@ General Notes
     - <Uni>Persian Persuader</Uni>
 
 ## Heavy
-### Primary
+<h3 id="heavy_primary">Primary</h3>
+
 <!-- - Unstable Module: Hurricane Module
   - <Pos>+275% weapon damage</Pos>
   - <Pos>+350% weapon damage vs Tanks</Pos>
@@ -893,7 +1013,8 @@ General Notes
     - Rage lasts 10s by default instead of 5s without snapshotting.
     - `Set DamageType Ignite 5` is used to cause afterburn, but the key only accepts a boolean value.
 
-### Secondary
+<h3 id="heavy_secondary">Secondary</h3>
+
 - Stable Mod: Combo Slugs
   - <Pos>+25% weapon damage</Pos>
   - <Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos>
@@ -928,7 +1049,8 @@ General Notes
   - Notes:
     - This upgrade provides conditions 41, 29 and 16. This of course means that the <Uni>Concheror</Uni> will interfere with the buff provided, but also means that the  <Uni>Buff Banner</Uni> will too, as condition 16 is presumably used incorrectly instead of 19.
 
-### Melee
+<h3 id="heavy_melee">Melee</h3>
+
 - Stable Mod: More Storage Space
   - <Pos>+25% primary ammo capacity</Pos>
   - <Pos>+35% weapon switch speed on wearer</Pos>
@@ -972,7 +1094,8 @@ General Notes
     - The now total <Neg>-100% maximum overheal</Neg> on this weapon is still subject to the weapon swap bug. Also note that the wording allows Overheal Expert to still apply overheal, and that the reversing the bug to apply a cap on overheal can be exploited for a faster uber build rate.
 
 ## Engineer
-### Primary
+<h3 id="engineer_primary">Primary</h3>
+
 - Stable Mod: Combo Slugs
   - <Pos>+25% weapon damage</Pos>
   - <Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos>
@@ -1041,7 +1164,8 @@ General Notes
   - Notes:
     - <Neg>16% reduced clip size</Neg> is incorrectly listed as '-15% clip size', but has no functional difference.
 
-### Secondary
+<h3 id="engineer_secondary">Secondary</h3>
+
 - Stable Mod: Sentry Companion
   - <Pos>+50% max building health</Pos>
   - <Pos>Teleporters can be used in both directions</Pos>
@@ -1091,9 +1215,8 @@ General Notes
     - <Pos>Weapon bullets destroy projectiles in-flight</Pos> is unlisted.
       - Uses 2 ticks of Destroy Projectiles; only requires one hit to destroy. Deflection event interval doesn't matter as the <Uni>Short Circuit</Uni> can't fire that fast with this upgrade.
 
+<h3 id="engineer_melee">Melee</h3>
 
-
-### Melee
 - Stable Mod: Mobile Processors
   - <Pos>Grants an additional Disposable Sentry</Pos>
   - <Pos>+200% to construction hit boost speed</Pos>
@@ -1127,10 +1250,11 @@ General Notes
 
 
 ## Medic
-### Primary
+<h3 id="medic_primary">Primary</h3>
+
 - Unstable Mod: Support Bolts
   - <Pos>On weapon hit: Apply 4s seconds of Mad Milk to target</Pos>
-  - <Neg>-25% weapon reload speed</Neg>
+  - <Neg>-75% weapon reload speed</Neg>
   - <Neg>-50% weapon damage</Neg>
   - Available on:
     - <Uni>Crusader's Crossbow</Uni>
@@ -1138,7 +1262,7 @@ General Notes
     - This has the same base duration as the Mad Milk Syringe's maximum.
 - Unstable Mod: Burst Reload
   - <Pos>Weapon reloads its entire clip at once</Pos>
-  - <Neg>-75% weapon reload speed</Neg>
+  - <Neg>-50% weapon reload speed</Neg>
   - <Neg>-20% weapon damage</Neg>
   - <Neg>Reload Speed cannot be upgraded</Neg>
   - Available on:
@@ -1157,12 +1281,12 @@ General Notes
   - Notes:
     - The clip size and reload penalty on this upgrade is still sufficient to keep up both <Uni>Jarate</Uni> and <Uni>Mad Milk</Uni> on a single target indefinitely without upgrade.
 
+<h3 id="medic_secondary">Secondary</h3>
 
-### Secondary
 - Unstable Mod: Broken Shield Lens
-  - <Pos>+25 max health on wearer</Pos>
-  - <Pos>+25% weapon heal rate</Pos>
-  - <Pos>+10% ÜberCharge rate on Overhealed patients</Pos>
+  - <Pos>+15 max health on wearer</Pos>
+  - <Pos>+20% weapon heal rate</Pos>
+  - <Pos>+5% ÜberCharge rate on Overhealed patients</Pos>
   - <Neg>-100% Projectile Shield damage</Neg>
   - <Neg>-65% Projectile Shield duration</Neg>
   - Available on:
@@ -1185,7 +1309,8 @@ General Notes
     - Uber build rate is roughly equivalent to a non-overhealed player at maximum health against buildings
       - Heal rate against buildings appears to be constant, and also idk how you would ever kill a sentry tanked by a medic with this.
 
-### Melee
+<h3 id="medic_melee">Melee</h3>
+
 - Stable Mod: Battery Leech
   - <Pos>On weapon hit: 15% ÜberCharge added</Pos>
   - Available on:
@@ -1217,7 +1342,8 @@ General Notes
     - Note that the medic does not recieve the buffs from taunting, but instead on weapon hit, overriding the heal component. Teammates do not receive buffs on hit, only the heal component. This seems to be caused by an oversight in the interaction between `"effect cond override"` and `"aoe heal chance"`. -->
 
 ## Sniper
-### Primary
+<h3 id="sniper_primary">Primary</h3>
+
 - Unstable Mod: Rifle Mastery
   - <Pos>+20% weapon damage at full charge</Pos>
   - <Pos>+50% rifle charge rate</Pos>
@@ -1259,7 +1385,8 @@ General Notes
   - Notes:
     - As a specific use case, this could avoid Uber Medics popping when they overheal each other as it applies the base damage of the shot to each, rather than the maximum of 190 on the Explosive Headshot upgrade.
 
-### Secondary
+<h3 id="sniper_secondary">Secondary</h3>
+
 - Stable Mod: Debuff Rounds
   - <Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos>
   - Available on:
@@ -1274,7 +1401,9 @@ General Notes
   - Notes:
     - <Pos>Increased headshot explosion radius and damage to nearby enemies</Pos> is equivalent to one tick of Explosive Headshot.
     - This seems like it would be more useful for its stun ability rather than damage, but note it has only slightly worse DPS vs a single target to a <Uni>Hitman's Heatmaker</Uni> that is focused with 3 ticks of reload speed; it has superior DPS to an unfocus rifle with the same reload speed upgrades.
-### Melee
+
+<h3 id="sniper_melee">Melee</h3>
+
 - Unstable Mod: Biohazard Blade ($200)
   - <Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos>
   - <Pos>+200% weapon bleed damage</Pos>
@@ -1287,7 +1416,8 @@ General Notes
     - <Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos> is incorrectly listed as 'Applies Jarate for 3 seconds'.
 
 ## Spy
-### Primary
+<h3 id="spy_primary">Primary</h3>
+
 - Stable Mod: Combo Slugs
   - <Pos>+25% weapon damage</Pos>
   - <Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos>
@@ -1336,7 +1466,9 @@ General Notes
 
 <!--### Secondary -->
 <!--### Melee-->
-### PDA2
+
+<h3 id="spy_pda2">PDA2</h3>
+
 - Unstable Mod: Cash Vacuum
   - <Pos>+400% credit collection radius on wearer</Pos>
   - <Pos>Gain +40 health from collected credits</Pos>
