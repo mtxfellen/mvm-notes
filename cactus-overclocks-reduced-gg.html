@@ -1,0 +1,1748 @@
+<p><title>GG Overclocks | fellen&#39;s MvM Notes</title></p>
+<p><link rel="icon" type="image/png" sizes="184x184" href="https://avatars.akamai.steamstatic.com/319d7b492c3a39b04abd80eead00c17590c49e2e_full.jpg"></p>
+<style>
+/* tf2 colouring */
+Pos {color:rgb(153,204,255)}
+Neg {color:rgb(255,64,64)}
+Neu {color:rgb(235,226,202)}
+Nor {color:rgb(178,178,178)}
+Uni {color:rgb(255,215,0)}
+
+/* temp theming */
+body {
+    background-color: #000000;
+    color: #d4d4d4;
+    font-family: 'Calibri';
+    width: 800px;
+}
+
+a:link {
+  color: #2f81f7;
+}
+
+a:visited {
+  color: #2f81f7;
+}
+</style>
+
+<!-- META PROPERTIES -->
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width,initial-scale=1"></p>
+<p><meta name="author" content="fellen"></p>
+<p><meta property="og:title" content="Galvanized Gauntlet Overclocks"></p>
+<p><meta property="og:type" content="website"></p>
+<p><meta property="og:url" content="https://mtxfellen.github.io"></p>
+<p><meta property="og:site_name" content="fellen's MvM Notes"></p>
+<p><meta property="og:description" content="A list of all Overclock Upgrades in the Galvanized Gauntlet tour."></p>
+<meta property="og:image" content="https://avatars.akamai.steamstatic.com/319d7b492c3a39b04abd80eead00c17590c49e2e_full.jpg">
+
+<h1 id="cactus-overclocks-for-galvanized-gauntlet">Cactus&#39; Overclocks for Galvanized Gauntlet</h1>
+<p><p></p>
+Overclock Upgrades are an attempt to:</p>
+<ul>
+<li>Increase the usage of weapons considered classically
+underpowered,</li>
+<li>Allow alternative playstyles for popular weapons.</li>
+</ul>
+<p>The specifics of these upgrades are detailed in this document. A maximum of one overclock is allowed per weapon.</p>
+<p><p></p>
+At the time of writing, the Galvanized Gauntlet missions with Overclock Upgrades available are:</p>
+<ul>
+<li>Bronx - Point of Impact (Advanced)</li>
+<li>Goldpit - Race Condition (Advanced)</li>
+<li>Lotus - LED-Motif (Advanced)</li>
+<li>Quetzal - Banana Barricade (Expert)</li>
+<li>Skangus - Metal Scorn (Advanced)</li>
+<li>Steep - Drill Down Disaster (Advanced)</li>
+<li>Waterlogged - Crydodoom (Advanced)</li>
+</ul>
+<!-- - Humbridge - Hampton Helix (Advanced) -->
+<details>
+<summary><font size="+2">Page Contents</font></summary>
+<div>
+<ul>
+  <li><a href="#scout">Scout</a>
+  <ul>
+    <li><a href="#scout_primary">Primary</a></li>
+    <li><a href="#scout_secondary">Secondary</a></li>
+    <li><a href="#scout_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#soldier">Soldier</a>
+  <ul>
+    <li><a href="#soldier_primary">Primary</a></li>
+    <li><a href="#soldier_secondary">Secondary</a></li>
+    <li><a href="#soldier_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#pyro">Pyro</a>
+  <ul>
+    <li><a href="#pyro_primary">Primary</a></li>
+    <li><a href="#pyro_secondary">Secondary</a></li>
+    <li><a href="#pyro_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#demoman">Demoman</a>
+  <ul>
+    <li><a href="#demoman_primary">Primary</a></li>
+    <li><a href="#demoman_secondary">Secondary</a></li>
+    <li><a href="#demoman_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#heavy">Heavy</a>
+  <ul>
+    <li><a href="#heavy_primary">Primary</a></li>
+    <li><a href="#heavy_secondary">Secondary</a></li>
+    <li><a href="#heavy_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#engineer">Engineer</a>
+  <ul>
+    <li><a href="#engineer_primary">Primary</a></li>
+    <li><a href="#engineer_secondary">Secondary</a></li>
+    <li><a href="#engineer_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#medic">Medic</a>
+  <ul>
+    <li><a href="#medic_primary">Primary</a></li>
+    <li><a href="#medic_secondary">Secondary</a></li>
+    <li><a href="#medic_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#sniper">Sniper</a>
+  <ul>
+    <li><a href="#sniper_primary">Primary</a></li>
+    <li><a href="#sniper_secondary">Secondary</a></li>
+    <li><a href="#sniper_melee">Melee</a></li>
+  </ul>
+  </li>
+  <li><a href="#spy">Spy</a>
+  <ul>
+    <li><a href="#spy_primary">Primary</a></li>
+    <li>Secondary</li>
+    <li>Melee</li>
+    <li><a href="#spy_pda2">PDA2</a></li>
+  </ul>
+  </li>
+</ul>
+</div>
+</details>
+
+<p><p></p>
+Weapon stats reference</p>
+<ul>
+<li><Pos>Up to <b>%s1</b>% increased fire rate as health decreases</Pos><ul>
+<li>Minimum fire rate is retained at 0.9-1x current maximum HP</li>
+<li>Maximum fire rate is achieved at 0.2x current maximum HP</li>
+<li>Fire rate is linearly interpolated between 0.2-0.9x current maximum HP</li>
+</ul>
+</li>
+<li><Neg>Up to <b>%s1</b>% reduced accuracy as health decreases</Neg><ul>
+<li>Minimum bullet spread is retained at 0.9-1x current maximum HP</li>
+<li>Maximum bullet spread is achieved at 0.2x current maximum HP</li>
+<li>Bullet spread is linearly interpolated between 0.2-0.9x current maximum HP</li>
+</ul>
+</li>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos><ul>
+<li>Like the Fan-o-war, the duration on this is halved when used vs Giants.</li>
+</ul>
+</li>
+<li><Neu>Weapon resistances and vulernability</Neu><ul>
+<li>Like stock weapons that provide these stats, they do not stack additively with resistances. No immortal babies.</li>
+</ul>
+</li>
+</ul>
+<h2 id="scout">Scout</h2>
+<h3 id="scout_primary">Primary</h3>
+
+<ul>
+<li>Unstable Mod: Cycle Overload<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>+40% weapon firing speed</Pos></li>
+<li><Neg>-150% weapon reload speed</Neg></li>
+<li><Neg>-100% weapon accuracy</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Scattergun</Nor></li>
+<li><Uni>Back Scatter</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Vintage Model<ul>
+<li><Pos>Boost is not reduced on taking damage</Pos></li>
+<li><Pos>+40% weapon accuracy</Pos></li>
+<li><Neg>No double jump on wearer</Neg></li>
+<li><Neg>-10% move speed on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Baby Face&#39;s Blaster</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Expanded Crit Module<ul>
+<li><Pos>Weapon always crits from behind</Pos></li>
+<li><Neg>-46% weapon accuracy</Neg></li>
+<li><Neg>-25% weapon reload speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Back Scatter</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Special Delivery<ul>
+<li><Pos>+25 max health on wearer</Pos></li>
+<li><Pos>+46% weapon reload speed</Pos></li>
+<li><Neg>No double jump on wearer</Neg></li>
+<li><Neg>-10% weapon firing speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Shortstop</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod:: Slim Slugs<ul>
+<li><Pos>+10% weapon damage</Pos></li>
+<li><Pos>+20% weapon accuracy</Pos></li>
+<li><Pos>No weapon knockback on target</Pos></li>
+<li><Neg>No weapon knockback on shooter</Pos></li>
+<li><Neg>-15% weapon reload speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Force-a-Nature</Uni>
+&lt;!--- Unstable Mod: Super Shells</li>
+</ul>
+</li>
+<li><Pos>Hype effect is replaced with mini-crits</Pos></li>
+<li><Neg>-25% weapon reload speed</Neg></li>
+<li><Neg>-50% weapon accuracy</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Soda Popper</Uni>--&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="scout_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Combo Bullets<ul>
+<li><Pos>On weapon kill: Wearer gains Crits for 3s.</Pos></li>
+<li><Pos>+25% weapon damage</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Pistol</Nor></li>
+<li><Uni>Pretty Boy&#39;s Pocket Pistol</Uni></li>
+<li><Uni>Winger</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Dairy Mags<ul>
+<li><Pos>On weapon hit: Apply 2.5s seconds of Mad Milk to target</Pos></li>
+<li><Neg>-75% weapon firing speed</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Pistol</Nor></li>
+<li><Uni>Pretty Boy&#39;s Pocket Pistol</Uni></li>
+<li><Uni>Winger</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Battalion&#39;s Bonk-up<ul>
+<li><Neu>Replaces Bonk! Effect with Battalion&#39;s Backup effect</Neu></li>
+<li><Pos>Stun and knockback immune during effect</Pos></li>
+<li><Pos>Weapon taunt can be used while airborne</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Bonk! Atomic Punch</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Hot Knife<ul>
+<li><Pos>On weapon hit: Target is ignited for 7.5s</Pos></li>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li><Pos>All players connected via Medigun beams are hit by weapon</Pos></li>
+<li><Neg>-50% weapon bleed damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Flying Guillotine</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="scout_melee">Melee</h3>
+
+<ul>
+<li>Unstable Mod: Support Swing<ul>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li><Pos>On weapon hit: Apply 6s seconds of Mad Milk to target</Pos></li>
+<li><Neg>-25 max health on wearer</Neg></li>
+<li><Neg>-50% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Bat</Nor></li>
+<li><Uni>Atomizer</Uni></li>
+<li><Uni>Boston Basher</Uni></li>
+<li><Uni>Candy Cane</Uni></li>
+<li><Uni>Holy Mackerel</Uni></li>
+<li><Uni>Sandman</Uni></li>
+<li><Uni>Sun-on-a-Stick</Uni></li>
+<li><Uni>Wrap Assassin</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Craftsman&#39;s Bat<ul>
+<li><Pos>+15 max health on wearer</Pos></li>
+<li><Pos>On weapon hit: Bleed target for 5s</Pos></li>
+<li><Pos>+300% weapon bleeding damage</Pos></li>
+<li><Neg>-35% swing speed</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Boston Basher</Uni></li>
+<li><Uni>Sandman</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Sugar Shock<ul>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li><Pos>Wearer blast damage vulnerability removed</Pos></li>
+<li><Pos>On weapon hit: Gain a speed boost for 5s</Pos></li>
+<li><Neg>-15 max health on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Candy Cane</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Soul Scorcher<ul>
+<li><Pos>+600% base weapon damage vs burning players</Pos></li>
+<li><Pos>All players connected via Medigun beams are hit by weapon</Pos></li>
+<li><Neg>90% damage penalty vs non-burning players</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Sun-on-a-Stick</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Heavy Material<ul>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>-30% damage from ranged sources</Pos></li>
+<li><Neg>-10% move speed</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Atomizer</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="soldier">Soldier</h2>
+<h3 id="soldier_primary">Primary</h3>
+
+<ul>
+<li>Unstable Mod: RPG Module<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>+35% weapon blast radius</Pos></li>
+<li><Pos>Weapon projectiles cannot be reflected or deflected</Pos></li>
+<li><Neg>Weapon Clip Size cannot be upgraded</Neg></li>
+<li><Neg>Rockets now fire in an arc</Neg></li>
+<li><Neg>-75% weapon clip size</Neg></li>
+<li><Neg>-75% weapon reload speed</Neg></li>
+<li><Neg>-20% weapon firing speed</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Rocket Launcher</Nor></li>
+<li><Uni>Original</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Extra Gunpowder<ul>
+<li><Pos>+15% weapon damage</Pos></li>
+<li><Pos>+25% weapon damage to tanks</Pos></li>
+<li><Pos>Weapon projectiles cannot be reflected or deflected</Pos></li>
+<li><Neg>-20% weapon blast radius</Neg></li>
+<li><Neg>-25% weapon clip size</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Direct Hit</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Bionic Box<ul>
+<li><Pos>On weapon hit: +40 health per enemy hit</Pos></li>
+<li><Pos>+99% firing speed</Pos></li>
+<li><Pos>+10% weapon reload speed</Pos></li>
+<li><Pos>+100% primary reserve ammo</Pos></li>
+<li><Neg>-60% weapon damage</Neg></li>
+<li><Neg>Weapon cannot fire until all rockets are loaded</Neg></li>
+<li><Neg>+3 degrees random weapon projectile deviation</Neg></li>
+<li><Neg>-25% weapon projectile speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Black Box</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Tank Buster<ul>
+<li><Pos>Heal-on-hit stacks vs multiple enemies</Pos></li>
+<li><Pos>+20% weapon damage vs tanks</Pos></li>
+<li><Neg>-25% weapon projectile speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Black Box</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Jump Module<ul>
+<li><Pos>+40% weapon firing speed</Pos></li>
+<li><Pos>+35% weapon blast radius</Pos></li>
+<li><Pos>+50% primary reserve ammo</Pos></li>
+<li><Neg>-15% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Liberty Launcher</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Smart Rockets<ul>
+<li><Pos>0.1x weapon firing delay while blast jumping</Pos></li>
+<li><Neu>Rockets home to crosshair position</Neu></li>
+<li><Neg>-50% weapon clip size</Neg></li>
+<li><Neg>-15% weapon damage</Neg></li>
+<li><Neg>+25% self-damage from blast jumping</Neg></li>
+<li><Neg>-35% weapon projectile speed</Neg></li>
+<li><Neg>Rockets detonate after 2.5s</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Air Strike</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="soldier_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Debuff Rounds<ul>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Shotgun</Nor></li>
+<li><Uni>Panic Attack</Uni></li>
+<li><Uni>Reserve Shooter</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Air-raid rounds<ul>
+<li><Pos>Weapon always crits while blast jumping</Pos></li>
+<li><Pos>0.5x weapon firing delay while blast jumping</Pos></li>
+<li><Pos>+50% weapon accuracy</Pos></li>
+<li><Pos>Provides the B.A.S.E. Jumper to wearer</Pos></li>
+<li><Neg>-50% weapon firing speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Reserve Shooter</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Titanium Soles<ul>
+<li><Pos>+200% credit collection radius on wearer</Pos></li>
+<li><Pos>Wearer never takes falling damage</Pos></li>
+<li><Pos>+25% primary reserve ammo</Pos></li>
+<li><Neg>No weapon stomp damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Gunboats</Uni></li>
+<li><Uni>Mantreads</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Slim Rockets<ul>
+<li><Pos>+15% reload speed on wearer</Pos></li>
+<li><Neg>-50% primary reserve ammo</Neg></li>
+<li><Neg>-50% secondary reserve ammo</Neg></li>
+<li>Available on:<ul>
+<li><Uni>B.A.S.E. Jumper</Uni></li>
+<li><Uni>Gunboats</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Heavy Duty Boots<ul>
+<li><Pos>+175 stomp damage</Pos></li>
+<li><Pos>+10% move speed on wearer<Pos></li>
+<li>Available on:<ul>
+<li><Uni>Mantreads</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Improved Parachute<ul>
+<li><Pos>200% increased air control on wearer</Pos></li>
+<li><Pos>Parachute re-deploy allowed</Pos></li>
+<li><Pos>+50% primary reserve ammo</Pos></li>
+<li>Available on:<ul>
+<li><Uni>B.A.S.E. Jumper</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Combo Slugs<ul>
+<li><Pos>+35% weapon damage</Pos></li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Prototype Panic<ul>
+<li><Pos>+40% weapon damage</Pos></li>
+<li><Pos>+34% weapon reload speed</Pos></li>
+<li><Pos>Up to +50% weapon firing speed as health decreases</Pos></li>
+<li><Neg>Fires -50% bullets per shot</Neg></li>
+<li><Neg>-25% weapon clip size</Neg></li>
+<li><Neg>Hold fire to load up to 4 shells</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Panic Attack</Uni>
+&lt;!-- - Unstable Mod: Condensed Core</li>
+</ul>
+</li>
+<li><Pos>+900% weapon damage</Pos></li>
+<li><Pos>Weapon projectiles can headshot</Pos></li>
+<li><Pos>Weapon projectiles bounce off walls, retaining 80% of speed after each bounce</Pos></li>
+<li><Neg>Weapon projectiles cannot hit the same target multiple times</Neg></li>
+<li><Neg>Clip Size cannot be upgraded</Neg></li>
+<li><Neg>Weapon projectiles now fire in an arc</Neg></li>
+<li><Neg>Weapon projectiles expire after 2s</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Righteous Bison</Uni>--&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Burst Lens<ul>
+<li><Pos>Weapon fires four rounds at once</Pos></li>
+<li><Pos>Weapon reloads four rounds at once</Pos></li>
+<li><Pos>+50% weapon projectile speed</Pos></li>
+<li><Pos>Projectile penetrates teammates</Pos></li>
+<li><Neg>Projectiles expire after 0.3s</Neg></li>
+<li><Neg>-35% weapon damage</Neg></li>
+<li><Neg>-50% weapon reload speed</Neg></li>
+<li><Neg>Reload Speed cannot be upgraded</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Righteous Bison</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="soldier_melee">Melee</h3>
+
+<ul>
+<li>Unstable Mod: Support Beacon<ul>
+<li><Pos>+100% buff range while active</Pos></li>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Neg>On miss: Hit yourself, idiot.</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Shovel</Nor></li>
+<li><Uni>Disciplinary Action</Uni></li>
+<li><Uni>Equalizer</Uni></li>
+<li><Uni>Escape Plan</Uni></li>
+<li><Uni>Pain Train</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Magnetic Spike<ul>
+<li><Pos>+150% melee range</Pos></li>
+<li><Pos>+100% credit collection radius on wearer</Pos></li>
+<li><Pos>+35% weapon damage</Pos></li>
+<li><Neg>+10% bullet damage taken</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Pain Train</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Titanic Toppler<ul>
+<li><Pos>All players connected via Medigun beams are hit by weapon</Pos></li>
+<li><Pos>+100% weapon damage vs Giants</Pos></li>
+<li><Pos>+50% melee range</Pos></li>
+<li><Neg>-15% weapon attack speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Market Gardener</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Combo Swing<ul>
+<li><Pos>On weapon kill: Wearer gains Crits for 4s.</Pos></li>
+<li><Pos>+100% melee range</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Market Gardener</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Survival Training<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>-35% damage taken from ranged sources while active</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Equalizer</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Samurai Spirit<ul>
+<li><Pos>+20% weapon attack speed</li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>+10% move speed</Pos></li>
+<li><Neg>+15% damage vulnerability</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Half-Zatoichi</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="pyro">Pyro</h2>
+<h3 id="pyro_primary">Primary</h3>
+
+<ul>
+<li>Unstable Mod: Caustic Fumes<ul>
+<li><Pos>+10% weapon damage</Pos></li>
+<li><Pos>Attacks with this weapon pierce damage resistance effects and bonuses</Pos></li>
+<li><Pos>On weapon hit: Apply Gas to target</Pos></li>
+<li><Neg>Airblast no longer pushes back players</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Flamethrower</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Acidic Compound<ul>
+<li><Pos>+15% damage vs Tanks</Pos></li>
+<li><Neg>No compression blast</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Backburner</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Leech Valve<ul>
+<li><Pos>On weapon hit: Gain up to +15 health per enemy hit</Pos></li>
+<li><Neg>-10% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Dragon&#39;s Fury</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Gas Jockey<ul>
+<li><Pos>+50% re-pressurization rate</Pos></li>
+<li><Pos>Attacks with this weapon pierce damage resistance effects and bonuses</Pos></li>
+<li><Pos>10% faster move speed on wearer</Pos></li>
+<li><Neg>Airblast no longer pushes back players</Neg></li>
+<li><Neg>-10% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Degreaser</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pyro_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Titanium Soles<ul>
+<li><Pos>+200% credit collection radius on wearer</Pos></li>
+<li><Pos>Wearer never takes falling damage</Pos></li>
+<li><Pos>+25% primary reserve ammo</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Thermal Thruster</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Heavy Duty Boots<ul>
+<li><Pos>+175 stomp damage</Pos></li>
+<li><Pos>+10% move speed on wearer<Pos></li>
+<li>Available on:<ul>
+<li><Uni>Thermal Thruster</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Combo Slugs<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Prototype Panic<ul>
+<li><Pos>+40% weapon damage</Pos></li>
+<li><Pos>+34% weapon reload speed</Pos></li>
+<li><Pos>Up to +50% weapon firing speed as health decreases</Pos></li>
+<li><Neg>Fires -50% bullets per shot</Neg></li>
+<li><Neg>-25% weapon clip size</Neg></li>
+<li><Neg>Hold fire to load up to 4 shells</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Volcanic Compound<ul>
+<li><Pos>+75% weapon damage</Pos></li>
+<li><Neg>-35% weapon projectile speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Detonator</Uni></li>
+<li><Uni>Flare Gun</Uni></li>
+<li><Uni>Scorch Shot</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Molten Core<ul>
+<li><Pos>+200% weapon afterburn tick rate</Pos></li>
+<li><Pos>On weapon hit: Bleed target for 3s</Pos></li>
+<li><Pos>+300% weapon bleed damage</Pos></li>
+<li><Neg>-50% weapon projectile speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Manmelter</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Trench Gun<ul>
+<li><Pos>Fires +20% bullets per shot</Pos></li>
+<li><Pos>On weapon hit: target is ignited for 7.5s</Pos></li>
+<li><Pos>+150% weapon afterburn tick rate</Pos></li>
+<li><Neg>-35% weapon accuracy</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Shotgun</Nor></li>
+<li><Uni>Reserve Shooter</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Australian Gas<ul>
+<li><Pos>Weapon now coats players in Jarate</Pos></li>
+<li><Neg>-75% weapon effect duration</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Gas Passer</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pyro_melee">Melee</h3>
+
+<ul>
+<li>Unstable Mod: Heavy Mallet<ul>
+<li><Neg>-25% weapon damage vs players</Neg></li>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>-35% bullet damage taken</Pos></li>
+<li><Pos>-90% push force taken from damage</Pos></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Homewrecker</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Gordbort Capacitor<ul>
+<li><Pos>All players connected via Medigun beams are hit by weapon</Pos></li>
+<li><Neg>-25% weapon attack speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Neon Annihilator</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Armor Breaking<ul>
+<li><Pos>+20% weapon damage</Pos></li>
+<li><Pos>+35% weapon damage vs Giants</Pos></li>
+<li><Pos>+35% weapon damage vs Tanks</Pos></li>
+<li><Neg>-20% weapon attack speed</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Fire Axe</Nor></li>
+<li><Uni>Axtinguisher</Uni></li>
+<li><Uni>Homewrecker</Uni></li>
+<li><Uni>Powerjack</Uni></li>
+<li><Uni>Sharpened Volcano Fragment</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Serrated Axe<ul>
+<li><Pos>Weapon always crits burning players</Pos></li>
+<li><Pos>Weapon does not extinguish burning targets</Pos></li>
+<li><Neg>-75% weapon damage vs non-burning players</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Axtinguisher</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Draining Coils<ul>
+<li><Pos>On weapon hit: Victim loses up to 15% Medigun charge</Pos></li>
+<li><Neg>-15 max health on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Third Degree</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Premium Rake<ul>
+<li><Pos>Weapon attacks all enemies in range</Pos></li>
+<li><Pos>+25% health from healers</Pos></li>
+<li><Neg>-50% health from packs</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Back Scratcher</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Hell-Forged Heal<ul>
+<li><Pos>On weapon hit: Gain up to +25 health</Pos></li>
+<li><Pos>+150% weapon afterburn tick rate</Pos></li>
+<li><Neg>-20% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Sharpened Volcano Fragment</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Team Bonding<ul>
+<li><Pos>+70% weapon melee range</Pos></li>
+<li><Pos>+55% weapon swing radius</Pos></li>
+<li><Pos>+80% weapon damage</Pos></li>
+<li><Pos>On weapon teammate hit: Boosts both players&#39; speed for 5s</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Hot Hand</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="demoman">Demoman</h2>
+<h3 id="demoman_primary">Primary</h3>
+
+<ul>
+<li>Unstable Mod: Slim Rockets<ul>
+<li><Pos>+15% reload speed on wearer</Pos></li>
+<li><Neg>-50% primary reserve ammo</Neg></li>
+<li><Neg>-50% secondary reserve ammo</Neg></li>
+<li>Available on:<ul>
+<li><Uni>B.A.S.E. Jumper</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Improved Parachute<ul>
+<li><Pos>200% increased air control on wearer</Pos></li>
+<li><Pos>Parachute re-deploy allowed</Pos></li>
+<li>Available on:<ul>
+<li><Uni>B.A.S.E. Jumper</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Mortar Mode<ul>
+<li><Pos>+30% weapon firing speed</Pos></li>
+<li><Pos>+35% weapon blast radius</Pos></li>
+<li><Neg>+3 degrees random weapon projectile deviation</Neg></li>
+<li><Neg>Hold fire to load up to 4 grenades</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li><Neu>Overloading the chamber will cause a misfire</Neu></li>
+<li>Available on:<ul>
+<li><Nor>Grenade Launcher</Nor></li>
+<li><Uni>Iron Bomber</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Burst Chamber<ul>
+<li><Pos>Weapon fires a bonus pipebomb per round</Pos></li>
+<li><Pos>Launched bombs do not shatter on surfaces</Pos></li>
+<li><Neg>-35% weapon damage</Neg></li>
+<li><Neg>-50% weapon blast radius</Neg></li>
+<li><Neg>-50% weapon damage on contact with surfaces</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Loch-n-Load</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Blunderbuss<ul>
+<li><Pos>On weapon hit: Refill 75% of your shield charge meter</Pos></li>
+<li><Pos>On weapon kill: Gain all banner effects for 4s</Pos></li>
+<li><Pos>Cannonballs explode on impact</Pos></li>
+<li><Pos>+20% weapon damage</Pos></li>
+<li><Pos>-75% self damage taken from blast jumping</Pos></li>
+<li><Neg>-50% weapon clip size</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Loose Cannon</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Cash Magnet<ul>
+<li><Pos>+200% credit collection radius on wearer</Pos></li>
+<li><Neg>-75% reload speed on wearer</Neg></li>
+<li><Neg>-25 max health on wearer</Neg></li>
+<li><Neg>-50% secondary reserve ammo</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Ali Baba&#39;s Wee Booties</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="demoman_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Titanium Soles<ul>
+<li><Pos>+200% credit collection radius on wearer</Pos></li>
+<li><Pos>Wearer never takes falling damage</Pos></li>
+<li><Pos>+25% primary reserve ammo</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Sticky Jumper</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Extra Adhesive<ul>
+<li><Pos>-0.1s weapon sticky arm time</Pos></li>
+<li><Pos>Stickybombs stick to enemies</Pos></li>
+<li><Neg>-2 max stickybombs out</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Stickybomb Launcher</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Overloaded Drum<ul>
+<li><Pos>+2 max stickybombs out</Pos></li>
+<li><Pos>+35% weapon firing speed</Pos></li>
+<li><Pos>-0.4s weapon sticky arm time</Pos></li>
+<li><Pos>Stickybombs stick to enemies</Pos></li>
+<li><Neg>+6 degrees random projectile deviation</Neg></li>
+<li><Neg>Hold fire to load up to 8 bombs</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li><Neg>-1000% max sticky charge time</Neg></li>
+<li><Neu>Overloading the chamber will cause a misfire</Neu></li>
+<li>Available on:<ul>
+<li><Uni>Scottish Resistance</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Prototype Sensor<ul>
+<li><Pos>+25% weapon clip size</Pos></li>
+<li><Pos>+20% weapon damage at full charge</Pos></li>
+<li><Pos>-15% max sticky charge time</Pos></li>
+<li><Neg>Stickybombs fizzle 1.5s after landing</Neg></li>
+<li><Neu>Projectile model appears at 2x scale</Neu></li>
+<li>Available on:<ul>
+<li><Uni>Quickiebomb Launcher</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Clash Combo<ul>
+<li><Pos>On shield kill: Wearer gains 4s of crits</Pos></li>
+<li><Neg>-70% reload speed on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Chargin&#39; Targe</Uni></li>
+<li><Uni>Splendid Screen</Uni></li>
+<li><Uni>Tide Turner</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Pocket Incinerator<ul>
+<li><Pos>+40 health from collected credits</Pos></li>
+<li><Neg>-75% reload speed on wearer</Neg></li>
+<li><Neg>-25% fire damage resistance on wearer</Neg></li>
+<li><Neg>-15% blast damage resistance on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Chargin&#39; Targe</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Pocket Incinerator<ul>
+<li>As above, but instead with: <ul>
+<li><Neg>-20% fire damage resistance on wearer</Neg></li>
+<li><Neg>-20% blast damage resistance on wearer</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Splendid Screen</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Pocket Incinerator<ul>
+<li>As above, but instead with: <ul>
+<li><Neg>-15% fire damage resistance on wearer</Neg></li>
+<li><Neg>-15% blast damage resistance on wearer</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Tide Turner</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="demoman_melee">Melee</h3>
+
+<ul>
+<li>Unstable Mod: Magnetic Spike<ul>
+<li><Pos>+150% melee range</Pos></li>
+<li><Pos>+100% credit collection radius on wearer</Pos></li>
+<li><Pos>+35% weapon damage</Pos></li>
+<li><Neg>+10% bullet damage taken</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Pain Train</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Gardener Module<ul>
+<li><Pos>Weapon deals crits while blast jumping</Pos></li>
+<li><Pos>+25% melee range</Pos></li>
+<li><Neg>-10% weapon attack speed</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Bottle</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Cushioned Explosive<ul>
+<li><Pos>No weapon self-knockback</Pos></li>
+<li><Neg>+50% weapon self damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Ullapool Caber</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Scottish Steel<ul>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>-15% damage vulnerability</Pos></li>
+<li><Pos>+400% to turning control when charging</Pos></li>
+<li><Pos>+1.5s to charge duration</Pos></li>
+</ul>
+</li>
+<li><Pos>Weapon always crits from behind</Pos></li>
+<li><Neg>-25% weapon attack speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Claidheamh Mòr</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Shield Slam<ul>
+<li><Pos>+200% shield charge impact damage</Pos></li>
+<li><Neg>-20% weapon attaack speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Persian Persuader</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="heavy">Heavy</h2>
+<h3 id="heavy_primary">Primary</h3>
+
+<!-- - Unstable Module: Hurricane Module
+  - <Pos>+275% weapon damage</Pos>
+  - <Pos>+350% weapon damage vs Tanks</Pos>
+  - <Pos>+35% weapon damage vs Giants</Pos>
+  - <Pos>Knockback Rage now instead applies Rocket Specialist</Pos>
+  - <Pos>Can be holstered while spinning</Pos>
+  - <Neu>Fires rockets instead of bullets</Neu>
+    - <Pos>Rockets fire from the center like the Original</Pos>
+    - <Neu>Rockets use the Flare Gun trail</Neu>
+    - <Neu>Rockets use the model associated with the Rescue Ranger</Neu>
+  - <Neu>Rockets home to crosshair position</Neu>
+  - <Neg>-330% weapon firing speed</Neg>
+  - <Neg>Projectiles detonate after 2.8s</Neg>
+  - <Neg>Cannot be revved</Neg>
+  - <Neg>-75% primary ammo</Neg>
+  - <Neg>No primary ammo from dispensers when active</NEg>
+  - <Neg>Mini-crits whenever it would normally crit</Neg>
+  - <Neg>Weapon damage does not fill the crit bucket</Neg>
+  - Available on:
+    - <Nor>Minigun</Nor>-->
+<ul>
+<li>Unstable Mod: Defense Framework<ul>
+<li><Pos>Can be holstered while spinning</Pos></li>
+<li><Pos>+30% damage resistance when below 50% health and spun up</Pos></li>
+<li><Pos>50% critical damage resistance on wearer</Pos></li>
+<li><Pos>No spin up time penalty</Pos></li>
+<li><Neg>-100% maximum overheal while active</Neg></li>
+<li><Neg>Cannot move while weapon is deployed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Brass Beast</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Leadstorm<ul>
+<li><Pos>+20% weapon damage</Pos></li>
+<li><Pos>-30% to spin up time</Pos></li>
+<li><Pos>Can be holstered while spinning</Pos></li>
+<li><Neg>Cannot move while weapon is deployed</Neg></li>
+<li><Neg>No spun up damage resistance</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Natascha</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Optimized Barrel<ul>
+<li><Pos>No movement penalty when spun up</Pos></li>
+<li><Pos>Knockback Rage now instead causes attacks to pierce damage resistance effects and bonuses</Pos></li>
+<li><Pos>Can be holstered while spinning</Pos></li>
+<li><Neg>-50% primary ammo capcity</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Tomislav</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Bigger Bullets<ul>
+<li><Pos>+10% weapon damage</Pos></li>
+<li><Pos>Knockback Rage now instead applies afterburn</Pos></li>
+<li><Neg>Consumes an additional 3 ammo per second while spun up</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Huo-Long Heater</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="heavy_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Combo Slugs<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Shotgun</Nor></li>
+<li><Uni>Family Business</Uni></li>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Prototype Panic<ul>
+<li><Pos>+40% weapon damage</Pos></li>
+<li><Pos>+34% weapon reload speed</Pos></li>
+<li><Pos>Up to +50% weapon firing speed as health decreases</Pos></li>
+<li><Neg>Fires -50% bullets per shot</Neg></li>
+<li><Neg>-25% weapon clip size</Neg></li>
+<li><Neg>Hold fire to load up to 4 shells</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Defensive Blast<ul>
+<li><Pos>75% of weapon damage is healed as life</Pos></li>
+<li><Pos>Weapon bullets destroy projectiles in-flight</Pos></li>
+<li><Neg>-10% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Family Business</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Mannly Meal<ul>
+<li><Pos>+175% to gesture speed on wearer</Pos></li>
+<li><Pos>Consuming also grants Concheror effect</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Buffalo Steak Sandvich</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="heavy_melee">Melee</h3>
+
+<ul>
+<li>Stable Mod: More Storage Space<ul>
+<li><Pos>+25% primary ammo capacity</Pos></li>
+<li><Pos>+35% weapon switch speed on wearer</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Fists</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Improved Robo Gru<ul>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>No max health drain when active</Pos></li>
+<li><Pos>+5% faster move speed</Pos></li>
+<li><Neg>You are Marked-For-Death, and for short period after switching weapons</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Gloves of Running Urgently</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Fuzzier Wool<ul>
+<li><Pos>Crits whenever it would normally mini-crit</Pos></li>
+<li><Neg>-15% weapon attack speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Holiday Punch</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Brute Bracers<ul>
+<li><Pos>+30% weapon damage</Pos></li>
+<li><Pos>Crits whenever it would normally mini-crit</Pos></li>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>No max health drain</Pos></li>
+<li><Neg>+15% damage vulnerability</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Eviction Notice</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Warrior&#39;s Code<ul>
+<li><Pos>No damage vulnerability</Pos></li>
+<li><Pos>Crits whenever it would normally mini-crit</Pos></li>
+<li><Neg>-30% weapon attack speed</Neg></li>
+<li><Neg>Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills.</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Warrior&#39;s Spirit</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Heavy Duty Steel<ul>
+<li><Pos>+40% ranged damage resistance</Pos></li>
+<li><Neg>+100% increased melee damage vulnerability</Neg></li>
+<li><Neg>-60% maximum overheal</Neg>
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="engineer">Engineer</h2>
+<h3 id="engineer_primary">Primary</h3>
+
+<ul>
+<li>Stable Mod: Combo Slugs<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Shotgun</Nor></li>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Prototype Panic<ul>
+<li><Pos>+40% weapon damage</Pos></li>
+<li><Pos>+34% weapon reload speed</Pos></li>
+<li><Pos>Up to +50% weapon firing speed as health decreases</Pos></li>
+<li><Neg>Fires -50% bullets per shot</Neg></li>
+<li><Neg>-25% weapon clip size</Neg></li>
+<li><Neg>Hold fire to load up to 4 shells</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Panic Attack</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Sentry Companion A.I<ul>
+<li><Pos>+30% sentry range</Pos></li>
+<li><Pos>+30% weapon damage to your sentry&#39;s target</Pos></li>
+<li><Neg>Per Shot: -25 metal</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Widowmaker</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Custom Engineered Shotgun<ul>
+<li><Pos>Alt-Fire: Use 150 metal to pick up your targeted building from long range</Pos></li>
+<li><Neg>Self mark-for-death when hauling buildings</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Shotgun</Nor></li>
+<li><Uni>Frontier Justice</Uni></li>
+<li><Uni>Widowmaker</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Improved Transistors<ul>
+<li><Pos>Alt-Fire: Use 100 metal to pick up your targeted building from long range</Pos></li>
+<li><Pos>+100% weapon damage</Pos></li>
+<li><Pos>+100% weapon projectile speed</Pos></li>
+<li><Pos>On weapon hit: Bleed for 1s</Pos></li>
+<li><Pos>Projectile penetrates teammates</Pos></li>
+<li><Pos>Projectile penetrates enemy targets</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Pomson 6000</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Burst Lens<ul>
+<li><Pos>Weapon fires four rounds at once</Pos></li>
+<li><Pos>Weapon reloads four rounds at once</Pos></li>
+<li><Pos>+50% weapon projectile speed</Pos></li>
+<li><Pos>Projectile penetrates teammates</Pos></li>
+<li><Neg>Projectiles expire after 0.3s</Neg></li>
+<li><Neg>-35% weapon damage</Neg></li>
+<li><Neg>-50% weapon reload speed</Neg></li>
+<li><Neg>Reload Speed cannot be upgraded</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Pomson 6000</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Compact Sensor<ul>
+<li><Pos>Long-range haul cost reduced to 50 metal</Pos></li>
+<li><Neg>-25% max metal on wearer</Neg></li>
+<li><Neg>-16% weapon clip size</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Rescue Ranger</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="engineer_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Sentry Companion<ul>
+<li><Pos>+50% max building health</Pos></li>
+<li><Pos>Teleporters can be used in both directions</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Pistol</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Combat Sensor<ul>
+<li><Pos>+50% damage bonus to your sentry&#39;s target</Pos></li>
+<li><Pos>On Kill: Gain Mini-crits for 6 seconds.</Pos></li>
+<li><Pos>-25% building cost</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Pistol</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Sentry Jumper<ul>
+<li><Pos>-95% self-damage taken from blast jumping</Pos></li>
+<li><Pos>Wearer never takes falling damage</Pos></li>
+<li><Neg>-10% max metal on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Wrangler</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Overclocked Circuit<ul>
+<li><Pos>Primary fire uses explosive bullets</Pos></li>
+<li><Pos>+500% weapon damage</Pos></li>
+<li><Pos>On weapon hit: 10 damage dealt is returned as metal</Pos></li>
+<li><Pos>Weapon range increased to 750HU</Pos></li>
+<li><Pos>Weapon bullets destroy projectiles in-flight</Pos></li>
+<li><Neg>Secondary fire disabled</Neg></li>
+<li><Neg>-250% weapon firing speed</Neg></li>
+<li><Neg>-35% weapon damage vs players</Neg></li>
+<li><Neg>+25% to self blast damage on wearer</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Short Circuit</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="engineer_melee">Melee</h3>
+
+<ul>
+<li>Stable Mod: Mobile Processors<ul>
+<li><Pos>Grants an additional Disposable Sentry</Pos></li>
+<li><Pos>+200% to construction hit boost speed</Pos></li>
+<li><Pos>+200% to dispenser health, ammo and metal output rate</Pos></li>
+<li><Pos>+50% sentry range</Pos></li>
+<li><Pos>Teleporter recharges 50% faster</Pos></li>
+<li><Pos>+50% weapon damage</Pos></li>
+<li>Available on:<ul>
+<li><Uni>Gunslinger</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Battle Module<ul>
+<li><Pos>+200% weapon bleeding damage</Pos></li>
+<li><Pos>No fire damage vulnerability</Pos></li>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>+20% sentry gun damage</Pos></li>
+<li><Pos>+50% sentry range</Pos></li>
+<li><Neg>-50% repair rate</Neg></li>
+<li><Neg>+20% damage vulnerability</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Southern Hospitality</Uni>
+
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="medic">Medic</h2>
+<h3 id="medic_primary">Primary</h3>
+
+<ul>
+<li>Unstable Mod: Support Bolts<ul>
+<li><Pos>On weapon hit: Apply 4s seconds of Mad Milk to target</Pos></li>
+<li><Neg>-75% weapon reload speed</Neg></li>
+<li><Neg>-50% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Crusader&#39;s Crossbow</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Burst Reload<ul>
+<li><Pos>Weapon reloads its entire clip at once</Pos></li>
+<li><Neg>-50% weapon reload speed</Neg></li>
+<li><Neg>-20% weapon damage</Neg></li>
+<li><Neg>Reload Speed cannot be upgraded</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Crusader&#39;s Crossbow</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Biohazard Needle<ul>
+<li><Pos>On weapon hit: Apply 3s seconds of Jarate to target</Pos></li>
+<li><Neg>-35% weapon reload speed</Neg></li>
+<li><Neg>-75% weapon clip size</Neg></li>
+<li><Neg>-75% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Syringe Gun</Nor></li>
+<li><Uni>Blutsauger</Uni></li>
+<li><Uni>Overdose</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="medic_secondary">Secondary</h3>
+
+<ul>
+<li>Unstable Mod: Broken Shield Lens<ul>
+<li><Pos>+15 max health on wearer</Pos></li>
+<li><Pos>+20% weapon heal rate</Pos></li>
+<li><Pos>+5% ÜberCharge rate on Overhealed patients</Pos></li>
+<li><Neg>-100% Projectile Shield damage</Neg></li>
+<li><Neg>-65% Projectile Shield duration</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Medi Gun</Nor></li>
+<li><Uni>Kritzkrieg</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Prototype Module<ul>
+<li><Pos>+50% weapon heal rate</Pos></li>
+<li><Pos>Heal buildings at a rate of 40%/s</Pos></li>
+<li><Neg>-50% maximum overheal</Neg></li>
+<li><Neg>-20% ÜberCharge rate on Overhealed patients</Neg></li>
+<li><Neg>-20% overheal duration</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Quick-Fix</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="medic_melee">Melee</h3>
+
+<ul>
+<li>Stable Mod: Battery Leech<ul>
+<li><Pos>On weapon hit: 15% ÜberCharge added</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Bonesaw</Nor></li>
+<li><Uni>Vita-Saw</Uni></li>
+<li><Uni>Solemn Vow</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stable Mod: Mark Module<ul>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Bonesaw</Nor></li>
+<li><Uni>Solemn Vow</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Protection Mode<ul>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Pos>+3 health regenerated per second</Pos></li>
+<li><Pos>+50% ranged damage resistance</Pos></li>
+</ul>
+</li>
+<li><Neg>-30% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Amputator</Uni>
+&lt;!-- - Unstable Mod: Vamprism Module</li>
+</ul>
+</li>
+<li><Pos>On weapon hit: Heal nearby allies for 24 health, up to once every 0.17s</Pos></li>
+<li><Pos>On weapon taunt: Apply the Battalion&#39;s Backup and Buff Banner effect to your team for 10s</Pos></li>
+<li><Neu>When weapon is active:</Neu><ul>
+<li><Neg>-3 health regenerated per second</Neg></li>
+<li><Neg>+20% damage vulnerability</Neg></li>
+</ul>
+</li>
+<li>Available on:<ul>
+<li><Uni>Amputator</Uni>--&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="sniper">Sniper</h2>
+<h3 id="sniper_primary">Primary</h3>
+
+<ul>
+<li>Unstable Mod: Rifle Mastery<ul>
+<li><Pos>+20% weapon damage at full charge</Pos></li>
+<li><Pos>+50% rifle charge rate</Pos></li>
+<li><Pos>-40% zoom time</Pos></li>
+<li><Neg>-65% weapon Explosive Headshot damage</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Sniper Rifle</Nor></li>
+<li><Uni>Bazaar Bargain</Uni></li>
+<li><Uni>Classic</Uni></li>
+<li><Uni>Sydney Sleeper</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Rifle Mastery<ul>
+<li>Same as above, but no <Pos>+20% weapon damage at full charge</Pos>.</li>
+<li>Available on:<ul>
+<li><Uni>Machina</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Rubber Compound<ul>
+<li><Pos>+300% weapon bleeding damage</Pos></li>
+<li><Pos>Projectiles home to targets after 3.25s</Pos></li>
+<li><Pos>Projectiles bounce off walls, retaining 95% of their speed after each bounce</Pos></li>
+<li><Pos>Weapon projectiles cannot be reflected or deflected</Pos></li>
+<li><Neg>No headshots</Neg></li>
+<li><Neg>-25% damage vs players</Neg></li>
+<li><Neg>Projectiles expire after 3.5s</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Huntsman</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Seeker Rounds<ul>
+<li><Pos>All players connected via Medigun beams are hit by weapon</Pos></li>
+<li><Pos>Can headshot when not fully charged</Pos></li>
+<li><Neg>-90% rifle charge rate</Neg></li>
+<li><Neg>-50% weapon Explosive Headshot damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Classic</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sniper_secondary">Secondary</h3>
+
+<ul>
+<li>Stable Mod: Debuff Rounds<ul>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li>Available on:<ul>
+<li><Nor>SMG</Nor></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Headshot Mode<ul>
+<li><Pos>Weapon can headshot</Pos></li>
+<li><Pos>Weapon has increased headshot explosion radius and damage to nearby enemies</Pos></li>
+<li><Neg>-90% weapon Explosive Headshot damage</Neg></li>
+<li><Neg>-50% weapon firing speed</Neg></li>
+<li>Available on:<ul>
+<li><Nor>SMG</Nor>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sniper_melee">Melee</h3>
+
+<ul>
+<li>Unstable Mod: Biohazard Blade ($200)<ul>
+<li><Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos></li>
+<li><Pos>+200% weapon bleed damage</Pos></li>
+<li><Pos>+20% weapon bleed tick rate</Pos></li>
+<li><Neg>-15% weapon damage</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Tribalman&#39;s Shiv</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="spy">Spy</h2>
+<h3 id="spy_primary">Primary</h3>
+
+<ul>
+<li>Stable Mod: Combo Slugs<ul>
+<li><Pos>+25% weapon damage</Pos></li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Revolver</Nor></li>
+<li><Uni>Diamondback</Uni></li>
+<li><Uni>L&#39;Etranger</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Magnum Chamber<ul>
+<li><Pos>+50% weapon damage</Pos></li>
+<li><Pos>+180% weapon damage while disguised</Pos></li>
+<li><Pos>On Hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li><Neg>Hold fire to load 6 bullets</Neg></li>
+<li><Neg>Auto-fires full clip once released</Neg></li>
+<li><Neg>-50% weapon reload speed</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Enforcer</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Tranq Rounds<ul>
+<li><Pos>On weapon hit: One target at a time is Marked-For-Death for 15s</Pos></li>
+<li><Pos>On weapon hit: Disable buildings for 4 seconds</Pos></li>
+<li><Pos>On weapon hit: Victim loses up to 25% Medigun charge</Pos></li>
+<li><Neg>Weapon rounds are replaced with syringes</Neg></li>
+<li><Neg>-35% weapon damage vs players</Neg></li>
+<li><Neg>-35% weapon clip size</Neg></li>
+<li>Available on:<ul>
+<li><Nor>Revolver</Nor></li>
+<li><Uni>Diamondback</Uni></li>
+<li><Uni>L&#39;Etranger</Uni></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Explosive Headshot<ul>
+<li><Pos>Weapon has increased headshot explosion radius and damage to nearby enemies</Pos></li>
+<li><Pos>Critical damage is unaffected by range</Pos></li>
+<li><Neg>-50% weapon reload speed</Neg></li>
+<li><Neg>-20% weapon firing speed</Neg></li>
+<li><Neg>-50% weapon clip size</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Ambassador</Uni>
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!--### Secondary -->
+<!--### Melee-->
+<h3 id="spy_pda2">PDA2</h3>
+
+<ul>
+<li>Unstable Mod: Cash Vacuum<ul>
+<li><Pos>+400% credit collection radius on wearer</Pos></li>
+<li><Pos>Gain +40 health from collected credits</Pos></li>
+<li>Available on:<ul>
+<li><Nor>Invis Watch</Nor></li>
+<li><Uni>Cloak and Dagger</Uni>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
