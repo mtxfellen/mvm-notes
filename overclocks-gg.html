@@ -212,7 +212,7 @@ General Notes</p>
 <li><Pos>+25 max health on wearer</Pos></li>
 <li><Pos>+46% weapon reload speed</Pos></li>
 <li><Neg>No double jump on wearer</Neg></li>
-<li><Neg>-10% weapon firing speed</Neg></li>
+<li><Neg>-30% weapon firing speed</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Shortstop</Uni></li>
 </ul>
@@ -224,7 +224,6 @@ General Notes</p>
 </ul>
 </li>
 <li>Unstable Mod:: Slim Slugs<ul>
-<li><Pos>+10% weapon damage</Pos></li>
 <li><Pos>+20% weapon accuracy</Pos></li>
 <li><Pos>No weapon knockback on target</Pos></li>
 <li><Neg>No weapon knockback on shooter</Pos></li>
@@ -391,7 +390,6 @@ General Notes</p>
 </li>
 <li>Unstable Mod: Soul Scorcher<ul>
 <li><Pos>+600% base weapon damage vs burning players</Pos></li>
-<li><Pos>All players connected via Medigun beams are hit by weapon</Pos></li>
 <li><Neg>90% damage penalty vs non-burning players</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Sun-on-a-Stick</Uni></li>
@@ -403,10 +401,6 @@ General Notes</p>
 <li>(35*0.75*3) + 6(35*0.75) = 236.25</li>
 </ul>
 </li>
-<li>Burning target damage bonus is not inherited down the medi-chain; target must be ignited or they will only recieve 3-8 damage.<ul>
-<li>Conversely, the target you hit does not have to be ignited to get the damage bonus down the chain.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -414,7 +408,7 @@ General Notes</p>
 <li>Unstable Mod: Heavy Material<ul>
 <li><Neu>When weapon is active:</Neu><ul>
 <li><Pos>-30% damage from ranged sources</Pos></li>
-<li><Neg>-10% move speed</Neg></li>
+<li><Neg>-15% move speed</Neg></li>
 </ul>
 </li>
 <li>Available on:<ul>
@@ -456,8 +450,7 @@ General Notes</p>
 </ul>
 </li>
 <li>Unstable Mod: Extra Gunpowder<ul>
-<li><Pos>+15% weapon damage</Pos></li>
-<li><Pos>+25% weapon damage to tanks</Pos></li>
+<li><Pos>+20% weapon damage</Pos></li>
 <li><Pos>Weapon projectiles cannot be reflected or deflected</Pos></li>
 <li><Neg>-20% weapon blast radius</Neg></li>
 <li><Neg>-25% weapon clip size</Neg></li>
@@ -525,7 +518,7 @@ General Notes</p>
 </ul>
 </li>
 <li>Unstable Mod: Smart Rockets<ul>
-<li><Pos>0.1x weapon firing delay while blast jumping</Pos></li>
+<li><Pos>0.06x weapon firing delay while blast jumping</Pos></li>
 <li><Neu>Rockets home to crosshair position</Neu></li>
 <li><Neg>-50% weapon clip size</Neg></li>
 <li><Neg>-15% weapon damage</Neg></li>
@@ -540,8 +533,8 @@ General Notes</p>
 <li>Rocket turn rate is limited to 360°/s</li>
 <li>Rocket range is now limited to 2750HU.</li>
 <li><Neg>-15% weapon damage</Neg> is unlisted.</li>
-<li><Pos>0.1s weapon firing speed while blast jumping</Pos> is incorrectly listed as &#39;+25% increase to rocket jump bonuses&#39;.<ul>
-<li>This is because <code>&quot;rocketjump attackrate bonus&quot;</code> is a positive multiplier of the default firing delay, so the real firing interval is about 0.08s.</li>
+<li><Pos>0.06x weapon firing speed while blast jumping</Pos> is incorrectly listed as &#39;+25% increase to rocket jump bonuses&#39;.<ul>
+<li>This is because <code>&quot;rocketjump attackrate bonus&quot;</code> is a positive multiplier of the default firing delay, so the real firing interval is about 0.048s.</li>
 </ul>
 </li>
 <li>Although the weapon lists &#39;+25% increase to rocket jump <em>bonuses</em>&#39;, it does not actually apply <Neg>-25% weapon blast radius while blast jumping</Neg>, as this stat applies as a fixed 0.8 radius multiplier.</li>
@@ -657,7 +650,7 @@ General Notes</p>
 </ul>
 </li>
 <li>Unstable Mod: Prototype Panic<ul>
-<li><Pos>+40% weapon damage</Pos></li>
+<li><Pos>+35% weapon damage</Pos></li>
 <li><Pos>+34% weapon reload speed</Pos></li>
 <li><Pos>Up to +50% weapon firing speed as health decreases</Pos></li>
 <li><Neg>Fires -50% bullets per shot</Neg></li>
@@ -795,7 +788,7 @@ General Notes</p>
 </li>
 <li>Unstable Mod: Samurai Spirit<ul>
 <li><Pos>+20% weapon attack speed</li>
-<li><Pos>On weapon kill: Wearer gains Mini-crits for 5s.</Pos></li>
+<li><Pos>On weapon kill: Wearer gains Mini-crits for 2s.</Pos></li>
 <li><Neu>When weapon is active:</Neu><ul>
 <li><Pos>+10% move speed</Pos></li>
 <li><Neg>+15% damage vulnerability</Neg></li>
@@ -806,7 +799,6 @@ General Notes</p>
 </ul>
 </li>
 <li>Notes:<ul>
-<li>Current health scales down as expected; you can&#39;t kill yourself by drawing the weapon below 25hp.</li>
 <li>Base move speed change: 80%/240HU/s -&gt; 96%/288HU/s</li>
 </ul>
 </li>
@@ -818,8 +810,6 @@ General Notes</p>
 
 <ul>
 <li>Unstable Mod: Caustic Fumes<ul>
-<li><Pos>+10% weapon damage</Pos></li>
-<li><Pos>Attacks with this weapon pierce damage resistance effects and bonuses</Pos></li>
 <li><Pos>On weapon hit: Apply Gas to target</Pos></li>
 <li><Neg>Airblast no longer pushes back players</Neg></li>
 <li>Available on:<ul>
@@ -828,7 +818,6 @@ General Notes</p>
 </li>
 <li>Notes:<ul>
 <li>The weapon lists <Pos>Slow enemies on hit</Pos>, but it does not appear to do anything on the <Nor>Flamethrower</Nor>.</li>
-<li><Pos>Attacks pierce damage resistance effects and bonuses</Pos> is unlisted.</li>
 <li><Pos>On Hit: Apply Gas to target</Pos> is incorrectly listed as &#39;Ignite non-ignitable targets&#39;; in particular, this wording ignores the fact that the <Nor>Flamethrower</Nor> will now always apply a full 10s afterburn.<ul>
 <li>The duration of the gas condition is infinite, but this doesn&#39;t particularly matter; the applying hit will trigger it.</li>
 </ul>
@@ -860,7 +849,7 @@ General Notes</p>
 <li><Pos>Attacks with this weapon pierce damage resistance effects and bonuses</Pos></li>
 <li><Pos>10% faster move speed on wearer</Pos></li>
 <li><Neg>Airblast no longer pushes back players</Neg></li>
-<li><Neg>-10% weapon damage</Neg></li>
+<li><Neg>-15% weapon damage</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Degreaser</Uni></li>
 </ul>
@@ -926,11 +915,27 @@ General Notes</p>
 </ul>
 </li>
 <li>Unstable Mod: Volcanic Compound<ul>
-<li><Pos>+75% weapon damage</Pos></li>
+<li><Pos>+35% weapon damage</Pos></li>
+<li><Neg>-35% weapon projectile speed</Neg></li>
+<li><Neg>-80% weapon afterburn duration</Neg></li>
+<li><Neg>-50% primary reserve ammo</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Flare Gun</Uni></li>
+</ul>
+</li>
+<li>Notes:<ul>
+<li><Pos>+35% weapon damage</Pos> is incorrectly listed as &#39;+50% damage bonus.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unstable Mod: Volcanic Compound<ul>
+<li><Pos>+35% weapon blast radius</Pos></li>
+<li><Pos>+50% weapon afterburn tick rate</Pos></li>
+<li><Neg>-50% weapon damage</Neg></li>
 <li><Neg>-35% weapon projectile speed</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Detonator</Uni></li>
-<li><Uni>Flare Gun</Uni></li>
 <li><Uni>Scorch Shot</Uni></li>
 </ul>
 </li>
@@ -1048,8 +1053,8 @@ General Notes</p>
 </li>
 </ul>
 </li>
-<li>Unstable Mod: Draining Coils<ul>
-<li><Pos>On weapon hit: Victim loses up to 15% Medigun charge</Pos></li>
+<li>Unstable Mod: Spine Zapper<ul>
+<li><Pos>Weapon always crits from behind</Pos></li>
 <li><Neg>-15 max health on wearer</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Third Degree</Uni></li>
@@ -1226,7 +1231,7 @@ General Notes</p>
 <li>Unstable Mod: Extra Adhesive<ul>
 <li><Pos>-0.1s weapon sticky arm time</Pos></li>
 <li><Pos>Stickybombs stick to enemies</Pos></li>
-<li><Neg>-2 max stickybombs out</Neg></li>
+<li><Neg>-3 max stickybombs out</Neg></li>
 <li>Available on:<ul>
 <li><Nor>Stickybomb Launcher</Nor></li>
 </ul>
@@ -1261,16 +1266,12 @@ General Notes</p>
 </li>
 <li>Unstable Mod: Prototype Sensor<ul>
 <li><Pos>+25% weapon clip size</Pos></li>
-<li><Pos>+20% weapon damage at full charge</Pos></li>
+<li><Pos>+15% weapon damage at full charge</Pos></li>
 <li><Pos>-15% max sticky charge time</Pos></li>
 <li><Neg>Stickybombs fizzle 1.5s after landing</Neg></li>
 <li><Neu>Projectile model appears at 2x scale</Neu></li>
 <li>Available on:<ul>
 <li><Uni>Quickiebomb Launcher</Uni></li>
-</ul>
-</li>
-<li>Notes:<ul>
-<li><Pos>+20% weapon damage at full charge</Pos> is incorrectly listed as &#39;+25% damage at full charge&#39;.</li>
 </ul>
 </li>
 </ul>
@@ -1372,6 +1373,7 @@ General Notes</p>
 <li>Unstable Mod: Cushioned Explosive<ul>
 <li><Pos>No weapon self-knockback</Pos></li>
 <li><Neg>+50% weapon self damage</Neg></li>
+<li><Neg>-25 max health on wearer</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Ullapool Caber</Uni></li>
 </ul>
@@ -1468,6 +1470,7 @@ General Notes</p>
 <li><Pos>+20% weapon damage</Pos></li>
 <li><Pos>-30% to spin up time</Pos></li>
 <li><Pos>Can be holstered while spinning</Pos></li>
+<li><Neg>-25% primary ammo capacity</Neg></li>
 <li><Neg>Cannot move while weapon is deployed</Neg></li>
 <li><Neg>No spun up damage resistance</Neg></li>
 <li>Available on:<ul>
@@ -1485,7 +1488,7 @@ General Notes</p>
 <li><Pos>No movement penalty when spun up</Pos></li>
 <li><Pos>Knockback Rage now instead causes attacks to pierce damage resistance effects and bonuses</Pos></li>
 <li><Pos>Can be holstered while spinning</Pos></li>
-<li><Neg>-50% primary ammo capcity</Neg></li>
+<li><Neg>-50% primary ammo capacity</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Tomislav</Uni></li>
 </ul>
@@ -1598,16 +1601,14 @@ General Notes</p>
 </li>
 <li>Notes:<ul>
 <li>I believe the &#39;short period&#39; is 0.5s after a complete switch could first occur in the case of weapons that apply this stat?</li>
-<li>&#39;Gru&#39; in upgrade name is not capitalized in-game.</li>
+<li>&#39;Gru&#39; in upgrade name is not capitalized in-game.
+&lt;!-- - Unstable Mod: Fuzzier Wool</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Unstable Mod: Fuzzier Wool<ul>
 <li><Pos>Crits whenever it would normally mini-crit</Pos></li>
 <li><Neg>-15% weapon attack speed</Neg></li>
 <li>Available on:<ul>
-<li><Uni>Holiday Punch</Uni></li>
+<li><Uni>Holiday Punch</Uni> --&gt;</li>
 </ul>
 </li>
 </ul>
@@ -1629,7 +1630,7 @@ General Notes</p>
 <li>Unstable Mod: Warrior&#39;s Code<ul>
 <li><Pos>No damage vulnerability</Pos></li>
 <li><Pos>Crits whenever it would normally mini-crit</Pos></li>
-<li><Neg>-30% weapon attack speed</Neg></li>
+<li><Neg>-50% weapon attack speed</Neg></li>
 <li><Neg>Honorbound: Once drawn sheathing deals 50 damage to yourself unless it kills.</Neg></li>
 <li>Available on:<ul>
 <li><Uni>Warrior&#39;s Spirit</Uni></li>
@@ -1639,8 +1640,13 @@ General Notes</p>
 </li>
 <li>Unstable Mod: Heavy Duty Steel<ul>
 <li><Pos>+40% ranged damage resistance</Pos></li>
+<li><Neg>-20% move speed on wearer</Neg></li>
 <li><Neg>+100% increased melee damage vulnerability</Neg></li>
 <li><Neg>-60% maximum overheal</Neg></li>
+<li>Available on:<ul>
+<li><Uni>Fists of Steel</Uni></li>
+</ul>
+</li>
 <li>Notes:<ul>
 <li>The now total <Neg>-100% maximum overheal</Neg> on this weapon is still subject to the weapon swap bug. Also note that the wording allows Overheal Expert to still apply overheal, and that the reversing the bug to apply a cap on overheal can be exploited for a faster uber build rate.</li>
 </ul>
@@ -1671,12 +1677,10 @@ General Notes</p>
 <li><Neg>Hold fire to load up to 4 shells</Neg></li>
 <li><Neg>Auto-fires full clip once released</Neg></li>
 <li>Available on:<ul>
-<li><Uni>Panic Attack</Uni></li>
+<li><Uni>Panic Attack</Uni>
+&lt;!-- - Unstable Mod: Sentry Companion A.I</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>Unstable Mod: Sentry Companion A.I<ul>
 <li><Pos>+30% sentry range</Pos></li>
 <li><Pos>+30% weapon damage to your sentry&#39;s target</Pos></li>
 <li><Neg>Per Shot: -25 metal</Neg></li>
@@ -1685,7 +1689,7 @@ General Notes</p>
 </ul>
 </li>
 <li>Notes:<ul>
-<li><Pos>+30% sentry range</Pos> is incorrectly listed as &#39;+25% sentry range&#39;.</li>
+<li><Pos>+30% sentry range</Pos> is incorrectly listed as &#39;+25% sentry range&#39;. --&gt;</li>
 </ul>
 </li>
 </ul>
@@ -1789,13 +1793,12 @@ General Notes</p>
 <li>Unstable Mod: Sentry Jumper<ul>
 <li><Pos>-95% self-damage taken from blast jumping</Pos></li>
 <li><Pos>Wearer never takes falling damage</Pos></li>
-<li><Neg>-10% max metal on wearer</Neg></li>
+<li><Neg>-15% max metal on wearer</Neg></li>
 <li>Available on:<ul>
-<li><Nor>Wrangler</Nor></li>
+<li><Uni>Wrangler</Uni></li>
 </ul>
 </li>
 <li>Notes:<ul>
-<li><Neg>-10% max metal</Neg> is listed incorrectly as &#39;-15% less metal&#39;.</li>
 <li><Pos>Wearer never takes falling damage</Pos> is unlisted.</li>
 </ul>
 </li>
@@ -1841,17 +1844,15 @@ General Notes</p>
 <ul>
 <li>Stable Mod: Mobile Processors<ul>
 <li><Pos>Grants an additional Disposable Sentry</Pos></li>
-<li><Pos>+200% to construction hit boost speed</Pos></li>
 <li><Pos>+200% to dispenser health, ammo and metal output rate</Pos></li>
 <li><Pos>+50% sentry range</Pos></li>
 <li><Pos>Teleporter recharges 50% faster</Pos></li>
-<li><Pos>+50% weapon damage</Pos></li>
+<li><Pos>+25% weapon damage</Pos></li>
 <li>Available on:<ul>
 <li><Uni>Gunslinger</Uni></li>
 </ul>
 </li>
 <li>Notes:<ul>
-<li><Pos>+200% to construction hit boost speed</Pos> is unlisted.</li>
 <li><Pos>+50% sentry range</Pos> is unlisted.</li>
 <li><Pos>+200% to dispenser health, ammo and metal output rate</Pos> is incorrectly listed as &#39;+50% more effecient dispenser&#39;.<ul>
 <li>Note that metal is not generated faster, but instead generates and dispenses in 3x quantity. Maximum metal capacity on the dispenser is not increased.</li>
@@ -1922,7 +1923,7 @@ General Notes</p>
 </ul>
 </li>
 <li>Unstable Mod: Biohazard Needle<ul>
-<li><Pos>On weapon hit: Apply 3s seconds of Jarate to target</Pos></li>
+<li><Pos>On weapon hit: Apply 2s seconds of Jarate to target</Pos></li>
 <li><Neg>-35% weapon reload speed</Neg></li>
 <li><Neg>-75% weapon clip size</Neg></li>
 <li><Neg>-75% weapon damage</Neg></li>
@@ -1943,7 +1944,6 @@ General Notes</p>
 
 <ul>
 <li>Unstable Mod: Broken Shield Lens<ul>
-<li><Pos>+15 max health on wearer</Pos></li>
 <li><Pos>+20% weapon heal rate</Pos></li>
 <li><Pos>+5% ÜberCharge rate on Overhealed patients</Pos></li>
 <li><Neg>-100% Projectile Shield damage</Neg></li>
@@ -2042,10 +2042,9 @@ General Notes</p>
 
 <ul>
 <li>Unstable Mod: Rifle Mastery<ul>
-<li><Pos>+20% weapon damage at full charge</Pos></li>
 <li><Pos>+50% rifle charge rate</Pos></li>
 <li><Pos>-40% zoom time</Pos></li>
-<li><Neg>-65% weapon Explosive Headshot damage</Neg></li>
+<li><Neg>-50% weapon Explosive Headshot damage</Neg></li>
 <li>Available on:<ul>
 <li><Nor>Sniper Rifle</Nor></li>
 <li><Uni>Bazaar Bargain</Uni></li>
@@ -2058,14 +2057,6 @@ General Notes</p>
 <li>Note that increases to zoom time also cause shots to start charging faster.</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Unstable Mod: Rifle Mastery<ul>
-<li>Same as above, but no <Pos>+20% weapon damage at full charge</Pos>.</li>
-<li>Available on:<ul>
-<li><Uni>Machina</Uni></li>
 </ul>
 </li>
 </ul>
@@ -2137,7 +2128,7 @@ General Notes</p>
 <h3 id="sniper_melee">Melee</h3>
 
 <ul>
-<li>Unstable Mod: Biohazard Blade ($200)<ul>
+<li>Unstable Mod: Biohazard Blade<ul>
 <li><Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos></li>
 <li><Pos>+200% weapon bleed damage</Pos></li>
 <li><Pos>+20% weapon bleed tick rate</Pos></li>
@@ -2148,7 +2139,10 @@ General Notes</p>
 </li>
 <li>Notes:<ul>
 <li>Deals ~263 damage total in a single swing over bleed duration.</li>
-<li><Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos> is incorrectly listed as &#39;Applies Jarate for 3 seconds&#39;.</li>
+<li><Pos>On weapon hit: Apply 10s seconds of Jarate to target</Pos> is incorrectly listed as &#39;Applies Jarate for 3 seconds&#39;.<ul>
+<li>It is defined to only last for 5s, but applies for 10s anyway.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
