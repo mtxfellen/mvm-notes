@@ -191,6 +191,7 @@ General Notes
   - <Neg>-15% weapon reload speed</Neg>
   - Available on:
     - <Uni>Force-a-Nature</Uni>
+
 <!--- Unstable Mod: Super Shells
   - <Pos>Hype effect is replaced with mini-crits</Pos>
   - <Neg>-25% weapon reload speed</Neg>
@@ -385,6 +386,7 @@ General Notes
   - <Neg>Auto-fires full clip once released</Neg>
   - Available on:
     - <Uni>Panic Attack</Uni>
+
 <!-- - Unstable Mod: Condensed Core
   - <Pos>+900% weapon damage</Pos>
   - <Pos>Weapon projectiles can headshot</Pos>
@@ -845,6 +847,7 @@ General Notes
     - <Neg>You are Marked-For-Death, and for short period after switching weapons</Neg>
   - Available on:
     - <Uni>Gloves of Running Urgently</Uni>
+
 <!-- - Unstable Mod: Fuzzier Wool
   - <Pos>Crits whenever it would normally mini-crit</Pos>
   - <Neg>-15% weapon attack speed</Neg>
@@ -892,6 +895,7 @@ General Notes
   - <Neg>Auto-fires full clip once released</Neg>
   - Available on:
     - <Uni>Panic Attack</Uni>
+
 <!-- - Unstable Mod: Sentry Companion A.I
   - <Pos>+30% sentry range</Pos>
   - <Pos>+30% weapon damage to your sentry's target</Pos>
@@ -904,7 +908,6 @@ General Notes
   - Available on:
     - <Nor>Shotgun</Nor>
     - <Uni>Frontier Justice</Uni>
-    - <Uni>Widowmaker</Uni>
 - Unstable Mod: Improved Transistors
   - <Pos>Alt-Fire: Use 100 metal to pick up your targeted building from long range</Pos>
   - <Pos>+100% weapon damage</Pos>
@@ -1051,6 +1054,7 @@ General Notes
   - <Neg>-30% weapon damage</Neg>
   - Available on:
     - <Uni>Amputator</Uni>
+    
 <!-- - Unstable Mod: Vamprism Module
   - <Pos>On weapon hit: Heal nearby allies for 24 health, up to once every 0.17s</Pos>
   - <Pos>On weapon taunt: Apply the Battalion's Backup and Buff Banner effect to your team for 10s</Pos>

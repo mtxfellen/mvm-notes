@@ -202,6 +202,7 @@ General Notes
   - Notes:
     - The additional colon exists in-game.
     - When ghost upgraded with Firing Speed, the knockback removal stat used to occasionally bug; have since been unable to reproduce this behaviour since HH2 and this note will be removed if the bug is not reported any further.
+
 <!--- Unstable Mod: Super Shells
   - <Pos>Hype effect is replaced with mini-crits</Pos>
   - <Neg>-25% weapon reload speed</Neg>
@@ -470,6 +471,7 @@ General Notes
   - <Neg>Auto-fires full clip once released</Neg>
   - Available on:
     - <Uni>Panic Attack</Uni>
+
 <!-- - Unstable Mod: Condensed Core
   - <Pos>+900% weapon damage</Pos>
   - <Pos>Weapon projectiles can headshot</Pos>
@@ -1067,6 +1069,7 @@ General Notes
   - Notes:
     - I believe the 'short period' is 0.5s after a complete switch could first occur in the case of weapons that apply this stat?
     - 'Gru' in upgrade name is not capitalized in-game.
+
 <!-- - Unstable Mod: Fuzzier Wool
   - <Pos>Crits whenever it would normally mini-crit</Pos>
   - <Neg>-15% weapon attack speed</Neg>
@@ -1116,6 +1119,7 @@ General Notes
   - <Neg>Auto-fires full clip once released</Neg>
   - Available on:
     - <Uni>Panic Attack</Uni>
+
 <!-- - Unstable Mod: Sentry Companion A.I
   - <Pos>+30% sentry range</Pos>
   - <Pos>+30% weapon damage to your sentry's target</Pos>
@@ -1130,7 +1134,6 @@ General Notes
   - Available on:
     - <Nor>Shotgun</Nor>
     - <Uni>Frontier Justice</Uni>
-    - <Uni>Widowmaker</Uni>
 - Unstable Mod: Improved Transistors
   - <Pos>Alt-Fire: Use 100 metal to pick up your targeted building from long range</Pos>
   - <Pos>+100% weapon damage</Pos>
@@ -1329,6 +1332,7 @@ General Notes
   - <Neg>-30% weapon damage</Neg>
   - Available on:
     - <Uni>Amputator</Uni>
+    
 <!-- - Unstable Mod: Vamprism Module
   - <Pos>On weapon hit: Heal nearby allies for 24 health, up to once every 0.17s</Pos>
   - <Pos>On weapon taunt: Apply the Battalion's Backup and Buff Banner effect to your team for 10s</Pos>
